@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // Helpers functions
 // Compare functions
@@ -10,16 +11,20 @@ int Int_cmp(int n1, int n2);
 int Float_cmp(float n1, float n2);
 int Double_cmp(double n1, double n2);
 int Ptr_cmp(void * pt1, void * pt2);
+int Str_cmp(char * str1, char * str2);
+
 // Copy functions
 void Int_copy(int * dest, int * src);
 void Float_copy(float * dest, float * src);
 void Double_copy(double * dest, double * src);
 void Ptr_copy(void ** dest, void ** src);
+void Str_copy(char ** dest, char ** src);
 
 // Free functions
 void Int_free(int val);
 void Float_free(float val);
 void Double_free(double val);
+void Str_free(char * str);
 
 // =============
 //  Definitions
@@ -41,6 +46,8 @@ typedef struct ARRAY \
 	ARRAY ## _elem_t * end; \
 	int    size; \
 	size_t elemSize; \
+	int    freeValue; \
+	int    freeIndex; \
 	void (*_copyValue)(Valuetype * dest, Valuetype * src); \
 	void (*_copyIndex)(Indextype * dest, Indextype * src); \
 	int (*_cmpValue)(Valuetype val1, Valuetype val2); \
@@ -80,7 +87,9 @@ ARRAY * ARRAY ## _new() \
 	array->size  = 0; \
 	array->array = NULL; \
 	array->end   = NULL; \
-	array->elemSize = sizeof(ARRAY ## _elem_t); \
+	array->elemSize   = sizeof(ARRAY ## _elem_t); \
+	array->freeValue  = 1; \
+	array->freeIndex  = 1; \
 	array->_copyValue = FN_CPY_VAL; \
 	array->_copyIndex = FN_CPY_IDX; \
 	array->_cmpValue  = FN_CMP_VAL; \
@@ -98,8 +107,8 @@ void ARRAY ## _free(ARRAY * array) \
 	for(it = array->array ; it != NULL ; it = it->next) \
 	{ \
 		if(it->prev) free(it->prev); \
-		array->_freeValue(it->value); \
-		array->_freeIndex(it->index); \
+		if(array->freeValue) array->_freeValue(it->value); \
+		if(array->freeIndex) array->_freeIndex(it->index); \
 	} \
 	free(array); \
 }
@@ -143,8 +152,8 @@ ARRAY * ARRAY ## _remove(ARRAY * array, Indextype index) \
 	ARRAY ## _elem_t * elem = ARRAY ## _get(array, index); \
 	if(elem != NULL) \
 	{ \
-		array->_freeValue(elem->value); \
-		array->_freeIndex(elem->index); \
+		if(array->freeValue) array->_freeValue(elem->value); \
+		if(array->freeIndex) array->_freeIndex(elem->index); \
 		elem->prev->next = elem->next; \
 		elem->next->prev = elem->prev; \
 		free(elem); \

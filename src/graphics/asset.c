@@ -113,7 +113,7 @@ Tile * Asset_get(Asset_array * assets, char * path)
 
 Asset * Asset_load(char * name)
 {
-	char * path;
+	char  * path;
 	Asset * asset = malloc(sizeof(Asset));
 	asset->surface  = NULL;
 	asset->tiles    = Tile_array_new();
@@ -124,7 +124,7 @@ Asset * Asset_load(char * name)
 	path = malloc(sizeof(char) * (strlen(asset->name) + 6 + ASSETS_DIR_LEN));
 	sprintf(path, "%s/%s.png", ASSETS_DIR, asset->name);
 
-	asset->surface = IMG_Load(path);
+	asset->surface = (SDL_Surface *)IMG_Load(path);
 	SDL_SetColorKey(asset->surface, SDL_TRUE, SDL_MapRGB(asset->surface->format, 0, 0, 0));
 
 	free(path);

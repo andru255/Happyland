@@ -21,6 +21,11 @@ int Ptr_cmp(void * pt1, void * pt2)
 	return pt1 - pt2;
 }
 
+int Str_cmp(char * str1, char * str2)
+{
+	return strcmp(str1, str2);
+}
+
 // Copy functions
 void Int_copy(int * dest, int * src)
 {
@@ -42,7 +47,13 @@ void Ptr_copy(void ** dest, void ** src)
 	*dest = *src;
 }
 
+void Str_copy(char ** dest, char ** src)
+{
+	strcpy(*dest, *src);
+}
+
 // Free functions
 void Int_free(int val)       { (void)(val); }
 void Float_free(float val)   { (void)(val); }
 void Double_free(double val) { (void)(val); }
+void Str_free(char * str)    { free(str);   }

@@ -1,5 +1,11 @@
 SUBDIRS=graphics
 
+if DEBUG
+AM_CFLAGS = -ggdb -O0 -D__DEBUG__
+else
+AM_CFLAGS = -O2
+endif
+
 bin_PROGRAMS=happyland
 
 happyland_LDADD= \

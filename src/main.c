@@ -28,7 +28,7 @@ int main(int argc, char ** argv)
 
 	// Load example Map
 	fprintf(stdout, "Map_load... "); fflush(stdout);
-	exampleMap = Map_load("example", gameData.assets);
+	exampleMap = Map_init_load("example", gameData.assets);
 
 	if(exampleMap != NULL) fprintf(stdout, "[OK]\n");
 	else                   fprintf(stdout, "[ERROR]\n");
@@ -56,6 +56,11 @@ int main(int argc, char ** argv)
 	SDL_DestroyWindow(window);
 
 	// Free Game Data
+	fprintf(stdout, "Map_free... "); fflush(stdout);
+	Map_free(exampleMap);
+	fprintf(stdout, "[OK]\n");
+	fprintf(stdout, "Asset_array_free... "); fflush(stdout);
 	Asset_array_free(gameData.assets);
+	fprintf(stdout, "[OK]\n");
 	return ERR_SUCCESS;
 }

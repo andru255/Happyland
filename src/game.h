@@ -14,4 +14,6 @@ typedef struct _GameData
 
 } GameData;
 
+GameData * GameData_new();
+
 #endif // __GAME_H__

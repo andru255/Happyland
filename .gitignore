@@ -1,0 +1,12 @@
+# Gitignore file
+####
+
+# Ignore build folders
+#####
+debug/*
+release/*
+
+# Ignore backup files
+#####
+*~
+*.backup

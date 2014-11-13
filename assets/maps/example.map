@@ -1,0 +1,54 @@
+#
+# Map example for happyland
+#
+
+[options]
+height = 10
+width  = 10
+background_color = 51,153,255
+
+[tiles]
+blocks1.wall_A_01   = B
+blocks1.roof_A_01   = A
+blocks1.leftRoof_A  = 1
+blocks1.rightRoof_A = 2
+
+[map]
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,1,A,A,A,A,A,A,2,0
+0,0,B,B,B,B,B,B,0,0
+0,0,B,B,B,B,B,B,0,0
+0,0,B,B,B,B,B,B,0,0
+0,0,B,B,B,B,B,B,0,0
+0,0,B,B,B,B,B,B,0,0
+
+#
+# Map layers :
+#
+# 0. Background not solid
+# 1. Foreground not solid
+# 2. Background solid
+# 3. Foreground solid
+# 4. Death
+# 5. Ice
+# 6. Exit
+# 7. Door
+# 8. Safe
+# 9. Switch
+# A. Swap
+#
+[map-layers]
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0

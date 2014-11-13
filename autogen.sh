@@ -2,7 +2,7 @@
 
 aclocal
 autoconf
-automake -a -c
+automake --foreign --add-missing
 
 echo "=================="
 echo " Ready, now run :"

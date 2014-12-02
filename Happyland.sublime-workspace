@@ -1,0 +1,1718 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"char",
+				"character"
+			],
+			[
+				"Pla",
+				"Player_new"
+			],
+			[
+				"cha",
+				"characters"
+			],
+			[
+				"Cha",
+				"CharacterSurface_free"
+			],
+			[
+				"Char",
+				"CharacterSurface_get"
+			],
+			[
+				"Ch",
+				"CharacterSurface"
+			],
+			[
+				"Player",
+				"Player_free"
+			],
+			[
+				"CS_",
+				"CS_DEFAULT"
+			],
+			[
+				"Pl",
+				"Player"
+			],
+			[
+				"ASS",
+				"ASSETS_DIR"
+			],
+			[
+				"as",
+				"currentAssetImage"
+			],
+			[
+				"SDL",
+				"SDL_CreateRGBSurface"
+			],
+			[
+				"tri",
+				"trim"
+			],
+			[
+				"ass",
+				"assetImageSurface"
+			],
+			[
+				"cu",
+				"currentAssetImage"
+			],
+			[
+				"trim",
+				"trimComment"
+			],
+			[
+				"cra",
+				"crawl1"
+			],
+			[
+				"CS_CRA",
+				"CS_CRAWL_1"
+			],
+			[
+				"C",
+				"CharacterState"
+			],
+			[
+				"Play",
+				"PlayerState_free"
+			],
+			[
+				"SDL_Sur",
+				"SDL_Surface_cmp"
+			],
+			[
+				"SDL_Surface_c",
+				"SDL_Surface_copy"
+			],
+			[
+				"SDL_Sr",
+				"SDL_Surface_cmp"
+			],
+			[
+				"chra",
+				"characters"
+			],
+			[
+				"GameD",
+				"GameData_free"
+			],
+			[
+				"Game",
+				"Game_LoadMap"
+			],
+			[
+				"config",
+				"configFile"
+			],
+			[
+				"MAP",
+				"MAPS_LIST_FILE"
+			],
+			[
+				"Map_load",
+				"Map_load_list"
+			],
+			[
+				"Ass",
+				"Asset_list_new"
+			],
+			[
+				"loa",
+				"loaded"
+			],
+			[
+				"__DEBU",
+				"__DEBUG_ASSET_LOAD__"
+			],
+			[
+				"Asset",
+				"Asset_load_config"
+			],
+			[
+				"__DE",
+				"__DEBUG_ASSET_LOAD__"
+			],
+			[
+				"__",
+				"__DEBUG_LVL_2__"
+			],
+			[
+				"__DEBUG",
+				"__DEBUG_MAP_LOAD__"
+			],
+			[
+				"raw",
+				"rawmapPos"
+			],
+			[
+				"line",
+				"line_number"
+			],
+			[
+				"__DEUG",
+				"__DEBUG_LVL_0__"
+			],
+			[
+				"Map_init",
+				"Map_init_load"
+			],
+			[
+				"Map_",
+				"Map_render"
+			],
+			[
+				"strc",
+				"strcpy"
+			],
+			[
+				"Map_ini",
+				"Map_init_load"
+			],
+			[
+				"free",
+				"freeValue"
+			],
+			[
+				"inMap",
+				"inMapLayer"
+			],
+			[
+				"inMa",
+				"inMapLayer"
+			],
+			[
+				"stru",
+				"structures"
+			],
+			[
+				"back",
+				"background_color"
+			],
+			[
+				"_show",
+				"_showMessage"
+			],
+			[
+				"_shwo",
+				"_showMessage"
+			],
+			[
+				"_sho",
+				"_showMessage"
+			],
+			[
+				"tmp",
+				"tmpRGB"
+			],
+			[
+				"R",
+				"RMASK"
+			],
+			[
+				"Tile_a",
+				"Tile_array"
+			],
+			[
+				"Tile",
+				"Tile_array"
+			],
+			[
+				"Tile_array",
+				"Tile_array_elem_t"
+			],
+			[
+				"Tile_arr",
+				"Tile_array_get"
+			],
+			[
+				"rawmap",
+				"rawmapIt"
+			],
+			[
+				"rawm",
+				"rawmapIt"
+			],
+			[
+				"Asset_arr",
+				"Asset_array"
+			],
+			[
+				"mem",
+				"memcpy"
+			],
+			[
+				"nbr",
+				"nbrTiles"
+			],
+			[
+				"IMPL",
+				"IMPLEMENT_ARRAY_FN_FREE"
+			],
+			[
+				"ARRAY",
+				"ARRAY_FN_FREE"
+			],
+			[
+				"_fre",
+				"_freeIndex"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"IMPLMEN",
+				"IMPLEMENT_ARRAY"
+			],
+			[
+				"gme",
+				"gameData"
+			],
+			[
+				"As",
+				"Asset_cmp"
+			],
+			[
+				"NEW_",
+				"NEW_ARRAY_DEFINITION"
+			],
+			[
+				"REL",
+				"RELEASE_FLAGS"
+			],
+			[
+				"TIL",
+				"TILE_HEIGHT"
+			],
+			[
+				"TILE",
+				"TILE_WIDTH"
+			],
+			[
+				"wit",
+				"width"
+			],
+			[
+				"tile",
+				"tiles"
+			],
+			[
+				"array",
+				"array->_cmpIndex"
+			],
+			[
+				"example",
+				"exampleMap"
+			],
+			[
+				"Map",
+				"Map_load"
+			],
+			[
+				"exa",
+				"exampleMap"
+			],
+			[
+				"Ma",
+				"Map_load"
+			],
+			[
+				"ff",
+				"fflush"
+			],
+			[
+				"nb",
+				"nbrTiles"
+			],
+			[
+				"Int",
+				"Int_free"
+			],
+			[
+				"IMPLEM",
+				"IMPLEMENT_ARRAY"
+			],
+			[
+				"Array",
+				"Array_Tile"
+			],
+			[
+				"DEBU",
+				"DEBUG_BUILD_DIR"
+			],
+			[
+				"deb",
+				"DEBUG_LIBS"
+			],
+			[
+				"DE",
+				"DEBUG_FLAGS"
+			],
+			[
+				"IMPLEMENT_A",
+				"IMPLEMENT_ARRAY_FN_NEW"
+			],
+			[
+				"NEW",
+				"NEW_ARRAY_DEFINITION"
+			],
+			[
+				"In",
+				"IntArray"
+			],
+			[
+				"prev",
+				"previous"
+			],
+			[
+				"_fr",
+				"_freeValue"
+			],
+			[
+				"_free",
+				"_freeIndex"
+			],
+			[
+				"FN_FR",
+				"FN_FREE_VALUE"
+			],
+			[
+				"FN",
+				"FN_CMP_IDX"
+			],
+			[
+				"FN_CMP",
+				"FN_CMP_VAL"
+			],
+			[
+				"FN_",
+				"FN_CPY_VAL"
+			],
+			[
+				"_copy",
+				"_copyValue"
+			],
+			[
+				"_cm",
+				"_cmpIndex"
+			],
+			[
+				"_cmp",
+				"_cmpValue"
+			],
+			[
+				"_e",
+				"_equalsIndex"
+			],
+			[
+				"_eq",
+				"_equalsValue"
+			],
+			[
+				"_equ",
+				"_equalsIndex"
+			],
+			[
+				"_cop",
+				"_copyIndex"
+			],
+			[
+				"_co",
+				"_copyValue"
+			],
+			[
+				"Inde",
+				"Indextype"
+			],
+			[
+				"roof_",
+				"roof_01"
+			],
+			[
+				"elem",
+				"elemSize"
+			],
+			[
+				"IMP",
+				"IMPLEMENT_ARRAY_FN_ADD_STRUCT"
+			],
+			[
+				"A",
+				"ArrayTypename"
+			],
+			[
+				"out",
+				"out_nbrAssets"
+			],
+			[
+				"asse",
+				"assets"
+			],
+			[
+				"pos",
+				"posRect"
+			],
+			[
+				"bt",
+				"btHalfWall_03"
+			],
+			[
+				"SDL_Get",
+				"SDL_GetWindowSurface"
+			],
+			[
+				"block",
+				"blocks1"
+			],
+			[
+				"cre",
+				"createTileSurface"
+			],
+			[
+				"Gra",
+				"Graphics_getTileRect"
+			],
+			[
+				"B",
+				"BMASK"
+			],
+			[
+				"til",
+				"tileCfg"
+			],
+			[
+				"ASSET",
+				"ASSETS_DIR"
+			],
+			[
+				"Grap",
+				"Graphics_Init"
+			],
+			[
+				"SDL_I",
+				"SDL_IMAGE_FLAGS"
+			],
+			[
+				"IMG_I",
+				"IMG_INIT_PNG"
+			],
+			[
+				"Graph",
+				"Graphics_Init"
+			],
+			[
+				"RELE",
+				"RELEASE_FLAGS"
+			],
+			[
+				"creat",
+				"create-debug-dir"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/characters/player.c",
+			"settings":
+			{
+				"buffer_size": 220,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/graphics/character.c",
+			"settings":
+			{
+				"buffer_size": 4883,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main.c",
+			"settings":
+			{
+				"buffer_size": 932,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/game.c",
+			"settings":
+			{
+				"buffer_size": 1668,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/graphics/asset.h",
+			"settings":
+			{
+				"buffer_size": 1283,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/game.h",
+			"settings":
+			{
+				"buffer_size": 398,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/graphics/asset.c",
+			"settings":
+			{
+				"buffer_size": 4103,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/graphics/character.h",
+			"settings":
+			{
+				"buffer_size": 1776,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/string-tools.h",
+			"settings":
+			{
+				"buffer_size": 309,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/characters/player.character",
+			"settings":
+			{
+				"buffer_size": 211,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/config.h",
+			"settings":
+			{
+				"buffer_size": 1370,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/make.sublime-build",
+	"command_palette":
+	{
+		"height": 372.0,
+		"selected_items":
+		[
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Li",
+				"Licence Snippet: GPLv3"
+			],
+			[
+				"Rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Lo",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"set syntax: C",
+				"Set Syntax: C"
+			],
+			[
+				"",
+				"AlignTab"
+			],
+			[
+				"Al",
+				"AlignTab"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"set:c++",
+				"Set Syntax: C++"
+			],
+			[
+				"Set:PHP",
+				"Set Syntax: PHP"
+			],
+			[
+				"Lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"SET:P",
+				"Set Syntax: PHP"
+			],
+			[
+				"set:js",
+				"Set Syntax: JSON"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set:ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"set",
+				"Set Syntax: PHP"
+			],
+			[
+				"set:PHP",
+				"Set Syntax: PHP"
+			],
+			[
+				"set:html",
+				"Set Syntax: HTML"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Set:",
+				"Set Syntax: HTML"
+			],
+			[
+				"th",
+				"Themr: List themes"
+			],
+			[
+				"the",
+				"Themr: List themes"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Set Synt:m",
+				"Set Syntax: Markdown"
+			],
+			[
+				"set:php",
+				"Set Syntax: PHP"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"set:htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set:sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"comme",
+				"Toggle Block Comment"
+			],
+			[
+				"setsy:sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"setsy:java",
+				"Set Syntax: Java"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"INsta",
+				"Package Control: Install Package"
+			],
+			[
+				"set syn:c",
+				"Set Syntax: C"
+			],
+			[
+				"set:ma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"LOre",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"Setsyn:html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syn:ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set:j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"PAcka",
+				"Package Control: Install Package"
+			],
+			[
+				"Lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"Git p",
+				"Git: Push"
+			],
+			[
+				"Git stat",
+				"Git: Status"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/baudouin/Documents/ESEO/Happyland_svn",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/assets",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/characters",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/characters",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics"
+	],
+	"file_history":
+	[
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/Makefile.am",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/configure.ac",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/characters/Makefile.am",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/characters/player.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/graphics.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/map.c",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/graphics.c",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/asset.c",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/graphics/arc1.png",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/characters/../character.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/maps/example.map",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/asset.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/tile.c",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/structures.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/utils.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/graphics/assets.conf",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/maps/map.list",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/config.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/map.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/game.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/c-containers/list.c",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/c-containers/list.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/main.c",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/game.c",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/Makefile.am",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/characters.h",
+		"/home/baudouin/Documents/ESEO/Happyland/assets/maps/map.list",
+		"/home/baudouin/aur/pkgbuild/TinyDir/PKGBUILD",
+		"/home/baudouin/workspace/ContainerMain/README.md",
+		"/home/baudouin/Applications/Adobe CS5 Master Collection/Instructions.txt",
+		"/tmp/AndroidManifest.xml",
+		"/home/baudouin/workspace/ContainerMain/AndroidManifest.xml",
+		"/home/baudouin/Documents/ESEO/Happyland/src/graphics/map.h",
+		"/home/baudouin/Documents/ESEO/Happyland/src/Makefile.am",
+		"/home/baudouin/Documents/ESEO/Happyland/src/CContainers/Makefile.am",
+		"/home/baudouin/Documents/ESEO/Happyland/src/graphics/asset.c",
+		"/home/baudouin/Documents/ESEO/Happyland/src/graphics/asset.h",
+		"/home/baudouin/Documents/ESEO/Happyland/src/graphics/graphics.c",
+		"/home/baudouin/Documents/ESEO/Happyland/src/graphics/structures.h",
+		"/home/baudouin/Documents/ESEO/Happyland/assets/graphics/blocks1.png",
+		"/home/baudouin/Documents/ESEO/Happyland/src/graphics/map.c",
+		"/home/baudouin/Documents/ESEO/Happyland/assets/graphics/assets.conf",
+		"/home/baudouin/Documents/ESEO/Happyland/src/graphics/tile.h",
+		"/home/baudouin/Documents/ESEO/Happyland/assets/maps/example.map",
+		"/home/baudouin/Documents/ESEO/Happyland/src/game.h",
+		"/home/baudouin/Documents/ESEO/Happyland/src/array.c",
+		"/home/baudouin/Documents/ESEO/Happyland/src/array.h",
+		"/home/baudouin/Documents/ESEO/Happyland/src/main.c",
+		"/home/baudouin/Documents/ESEO/Happyland/src/graphics/tile.c",
+		"/home/baudouin/Documents/ESEO/Happyland/src/game.c",
+		"/home/baudouin/Documents/ESEO/Happyland/configure.ac",
+		"/home/baudouin/Documents/ESEO/Happyland/src/utils.h",
+		"/home/baudouin/Documents/ESEO/Happyland/src/graphics/graphics.h",
+		"/home/baudouin/Documents/ESEO/Happyland/autogen.sh",
+		"/home/baudouin/Documents/ESEO/Happyland/src/graphics/Makefile.am",
+		"/home/baudouin/Documents/ESEO/Happyland/.gitignore",
+		"/home/baudouin/Documents/ESEO/Happyland/README.md",
+		"/home/baudouin/Documents/ESEO/Happyland/Makefile.old.manuel",
+		"/home/baudouin/Documents/ESEO/Happyland/Makefile.am",
+		"/tmp/autogen.sh",
+		"/tmp/configure.ac",
+		"/home/baudouin/Documents/ESEO/Happyland/INSTALL",
+		"/home/baudouin/Documents/ESEO/Happyland/Makefile.in",
+		"/home/baudouin/Documents/ESEO/Happyland/graphics/graphics.h",
+		"/home/baudouin/Documents/ESEO/Happyland/game.h",
+		"/home/baudouin/Documents/ESEO/Happyland/config.h",
+		"/home/baudouin/Documents/ESEO/Happyland/game.c",
+		"/home/baudouin/Documents/ESEO/Happyland/Makefile",
+		"/home/baudouin/Documents/ESEO/Happyland/array.c",
+		"/home/baudouin/Documents/ESEO/Happyland/array.h",
+		"/home/baudouin/Documents/ESEO/Happyland/graphics/tile.c",
+		"/home/baudouin/Documents/ESEO/Happyland/utils.h",
+		"/home/baudouin/Documents/ESEO/Happyland/graphics/tile.h",
+		"/home/baudouin/Documents/ESEO/Happyland/graphics/asset.h",
+		"/home/baudouin/Documents/ESEO/Happyland/graphics/map.h",
+		"/home/baudouin/Documents/ESEO/Happyland/graphics/graphics.c",
+		"/home/baudouin/Documents/ESEO/Happyland/main.c",
+		"/home/baudouin/gnome-extensions/DynamicTopBar/dynamicTopBar@gnomeshell.feildel.fr/stylesheet.css",
+		"/home/baudouin/gnome-extensions/DynamicTopBar/dynamicTopBar@gnomeshell.feildel.fr/extension.js",
+		"/home/baudouin/gnome-extensions/DynamicTopBar/dynamicTopBar@gnomeshell.feildel.fr/metadata.json",
+		"/home/baudouin/devel/CArray/README.md",
+		"/home/baudouin/devel/CArray/LICENSE",
+		"/home/baudouin/Documents/ESEO/Happyland/utils.c",
+		"/home/baudouin/Documents/ESEO/Happyland/string-tools.c",
+		"/home/baudouin/Documents/ESEO/Happyland/string-tools.h",
+		"/home/baudouin/Documents/ESEO/Happyland/error-codes.h",
+		"/home/baudouin/Documents/ESEO/Happyland/utils.expanded.c",
+		"/home/baudouin/gnome-extensions/MouseTravel/prefs.js",
+		"/home/baudouin/gnome-extensions/MouseTravel/extension.js",
+		"/home/baudouin/gnome-extensions/MouseTravel/metadata.json",
+		"/home/baudouin/gnome-extensions/MouseTravel/schemas/org.gnome.shell.extensions.mouse-travel.gschema.xml",
+		"/home/baudouin/.cache/.fr-TluEv0/metadata.json",
+		"/home/baudouin/Documents/ESEO/Happyland/assets/graphics/license.rtf",
+		"/home/baudouin/Documents/ESEO/svn/user6/exo12/lib.c",
+		"/etc/pacman.conf",
+		"/home/baudouin/devel/Pacman-Front/alpmpp/alpm-list.cpp",
+		"/home/baudouin/devel/Pacman-Front/alpm_list.c",
+		"/srv/http/tlm_api/vendor/amdg2/kiss/src/Kiss/Bdd/Record.php",
+		"/srv/http/tlm_api/vendor/amdg2/kiss/src/Kiss/Bdd/Table.php",
+		"/srv/http/tlm_api/index.php",
+		"/srv/http/tlm_api/vendor/amdg2/kiss/src/Kiss/Bdd/Field.php",
+		"/srv/http/Kiss/src/Kiss/Bdd/SQLComparator.php",
+		"/srv/http/tlm_api/vendor/amdg2/kiss/src/Kiss/Bdd/SQL.php",
+		"/srv/http/Kiss/src/Kiss/Bdd/SQL.php",
+		"/srv/http/Kiss/src/Kiss/Bdd/Record.php",
+		"/srv/http/Kiss/src/Kiss/Bdd/Table.php",
+		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=baudouin/srv/node/baudouin/colloque/repas/config.js",
+		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=baudouin/srv/node/baudouin/colloque/repas/lib.js",
+		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=baudouin/srv/node/baudouin/colloque/repas/main.js",
+		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=baudouin/srv/node/baudouin/colloque/repas/app/index.html",
+		"/usr/share/gnome-shell/extensions/example@gnome-shell-extensions.gcampax.github.com/metadata.json",
+		"/usr/share/gnome-shell/extensions/example@gnome-shell-extensions.gcampax.github.com/convenience.js",
+		"/usr/share/gnome-shell/extensions/example@gnome-shell-extensions.gcampax.github.com/stylesheet.css",
+		"/usr/share/gnome-shell/extensions/example@gnome-shell-extensions.gcampax.github.com/extension.js",
+		"/usr/share/gnome-shell/extensions/example@gnome-shell-extensions.gcampax.github.com/prefs.js",
+		"/home/baudouin/gnome-extensions/DynamicTopBar/dynamicTopBar@gnomeshell.feildel.fr/schemas/org.gnome.shell.extensions.dynamic-top-bar.gschema.xml",
+		"/home/baudouin/gnome-extensions/Gnome-Shell-Window-Buttons-Extension/window_buttons@biox.github.com/extension.js",
+		"/home/baudouin/gnome-extensions/Gnome-Shell-Window-Buttons-Extension/window_buttons@biox.github.com/prefs.js",
+		"/home/baudouin/gnome-extensions/DynamicTopBar/install.sh",
+		"/home/baudouin/.xinitrc",
+		"/run/user/1000/gvfs/sftp:host=alpha.feildel.fr,user=baudouin/srv/node/baudouin/database/main.js",
+		"/run/user/1000/gvfs/sftp:host=alpha.feildel.fr,user=baudouin/srv/node/baudouin/valorisation/modules/address/address.js",
+		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=root/opt/googleplay-api/details.py",
+		"/home/baudouin/devel/Pacman-Front/alpmpp/config/arch.cpp",
+		"/home/baudouin/devel/Pacman-Front/alpmpp/config/callbacks.h",
+		"/home/baudouin/devel/Pacman-Front/alpmpp/config/arch.h",
+		"/home/baudouin/devel/Pacman-Front/alpmpp/config/siglevel.cpp",
+		"/home/baudouin/devel/Pacman-Front/alpmpp/config/siglevel.h"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"DOG_H",
+			"calloc",
+			"Map_load_list",
+			"DEBUG_MAP_0",
+			"DEBUG_MAP",
+			"ARRAY",
+			"10",
+			"20",
+			"memcmp",
+			"Array_Tile",
+			"; ",
+			" (\\{|\\}) ",
+			" ({|}) ",
+			"; ",
+			" \\{",
+			"\\} ",
+			"\\{ ",
+			"\\} ",
+			" \\}",
+			"\\{ ",
+			"{ ",
+			"; ",
+			"Indextype",
+			"Valuetype",
+			"ARRAY",
+			"Typename",
+			"Tile_load",
+			"$(LIBS",
+			"create-build-dir",
+			"$(BUILD_DIR)",
+			"$app['bdd']",
+			"database",
+			"package",
+			"https://fonts.gstatic.com/s/opensans/v10/",
+			"https://fonts.gstatic.com/s/ptsans/v7/",
+			"https://fonts.gstatic.com/s/ptserif/v8/",
+			"confirm",
+			"blowfish.encrypt",
+			"blowfish.decrypt",
+			"document.getElementById",
+			"kdebase-dolphin",
+			"  \\d{1,3}\\)",
+			">\n",
+			"echo",
+			"RDM",
+			"KISS",
+			"RDM",
+			"z-index",
+			"nav",
+			"sizing",
+			"urlencode",
+			"'error'",
+			"^$",
+			"[^\\{\\}]",
+			"[^\\t\\n ]",
+			"\\t|\\n",
+			" ",
+			"<!--",
+			"bd",
+			"fieldset",
+			"add",
+			"finPage",
+			"echo",
+			"Yii::app\\(\\)->params",
+			"Yii::app()->params",
+			"errorSummary",
+			"encrypt\\(",
+			"sm",
+			"compton",
+			"display_volume",
+			"after",
+			"h2",
+			" ",
+			"pstr",
+			"tmp",
+			"freeListe",
+			"fprintf(.*);",
+			"fprintf(error",
+			"printf(\"",
+			"(*w)",
+			"	",
+			"län",
+			"\\.",
+			".",
+			" 	",
+			"btn btn-primary btn-danger",
+			"btn btn-primary btn-success",
+			"<label class=\"btn btn-primary\"><input type=\"radio\" name=\"options\" id=\"option2\"> Non</label>",
+			"<label class=\"btn btn-primary\"><input type=\"radio\" name=\"options\" id=\"option1\"> Oui</label>",
+			"btn-md",
+			"height",
+			"line-height",
+			"sprintf_s",
+			"strcpy_s",
+			"sprintf_s",
+			"strcat_s",
+			"sprintf_s",
+			"strcpy_s",
+			"sprintf_s",
+			"strcpy_s",
+			"strcat_s",
+			"strcpy_s",
+			"sprintf_s",
+			"//-+",
+			"///-*",
+			"//-------------------------",
+			"    ",
+			"strcpy_s",
+			"sprintf_s",
+			"sprintf",
+			"sprintf_s",
+			"strcpy_s",
+			"strcat_s",
+			"strcpy_s",
+			"sprintf_s",
+			"strcpy_s",
+			"sprintf_s",
+			"strcat_s",
+			"sprintf_s",
+			"strcpy_s",
+			"sprintf_s",
+			"strcat_s",
+			"sprintf_s",
+			"strcpy_s",
+			"sprintf_s",
+			"strcat_s",
+			"sprintf_s",
+			"strcpy_s"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"PLAYER_H",
+			"DEBUG_MAP_FN",
+			"DEBUG_MAP_0",
+			"LIST",
+			"B",
+			"A",
+			"Tile_array",
+			";\\n",
+			"\\n$1\\n",
+			";\\n",
+			"\\n{",
+			"}\\n",
+			"\\n}",
+			"{\\n",
+			"{\\n\\t",
+			";\\n",
+			"int",
+			"IntArray",
+			"Valuetype",
+			"$(RELEASE_LIBS",
+			"create-release-dir",
+			"$(RELEASE_BUILD_DIR)",
+			"$bdd",
+			"db",
+			"pkg",
+			"../fonts/",
+			"encrypt",
+			"decrypt",
+			"$",
+			"",
+			"KISS",
+			"rawurlencode",
+			"'danger'",
+			"",
+			"finPageMinimal",
+			"xs",
+			"brightness",
+			"h1",
+			"\n",
+			"fprintf$1; fflush(stderr);",
+			"fprintf(stderr",
+			"fprintf(error, \"",
+			"tmp",
+			";",
+			"län, Sweden",
+			",",
+			"	",
+			"btn btn-sm btn-danger",
+			"btn btn-sm btn-success",
+			"<label class=\"btn btn-primary btn-danger\"><input type=\"radio\" name=\"options\" id=\"option2\"> Non</label>",
+			"<label class=\"btn btn-primary btn-success\"><input type=\"radio\" name=\"options\" id=\"option1\"> Oui</label>",
+			"btn-sm",
+			"display: block; height",
+			"height",
+			"sprintf",
+			"strcpy",
+			"sprintf",
+			"strcat",
+			"sprintf",
+			"strcpy",
+			"sprintf",
+			"strcpy",
+			"strcat",
+			"strcpy",
+			"sprintf",
+			"///",
+			"	",
+			"strcpy",
+			"sprintf",
+			"strcpy",
+			"strcat",
+			"strcpy",
+			"sprintf",
+			"strcpy",
+			"sprintf",
+			"strcat",
+			"sprintf",
+			"strcpy",
+			"sprintf",
+			"strcat",
+			"sprintf",
+			"strcpy",
+			"sprintf",
+			"strcat",
+			"sprintf",
+			"strcpy",
+			"sprintf",
+			"",
+			"insertionArbre",
+			"droite",
+			"200ms",
+			"23.7%",
+			"23.8%",
+			"23.9%",
+			"23.5%",
+			"<a href=\"#anywhere\">Replier</a>",
+			"<button type=\"button\" class=\"clear-anchor\">Replier</button>",
+			"",
+			" ",
+			"endif",
+			"struct",
+			"struct Element"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/baudouin/Documents/ESEO/Happyland_svn"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/characters/player.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/graphics/character.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4143,
+								4143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1404.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								668,
+								668
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/game.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1668,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1149,
+								1149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/graphics/asset.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								83,
+								83
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/game.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "src/graphics/asset.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3352,
+								3352
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/graphics/character.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								172,
+								172
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/string-tools.h",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "assets/characters/player.character",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/config.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.617341040463,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 200.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-commit":
+	{
+		"height": 100.0
+	},
+	"output.git-push":
+	{
+		"height": 100.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"visite",
+				"models/Visite.php"
+			],
+			[
+				"cur",
+				"/usr/include/curses.h"
+			],
+			[
+				"trans",
+				"transfert.cpp"
+			],
+			[
+				"ten",
+				"tendance2.cpp"
+			],
+			[
+				"tend",
+				"tendance.cpp"
+			],
+			[
+				"telec2",
+				"telec2.cpp"
+			],
+			[
+				"tar",
+				"tarifaut.cpp"
+			],
+			[
+				"stati",
+				"station.cpp"
+			],
+			[
+				"synth",
+				"synthese.cpp"
+			],
+			[
+				"syno",
+				"syno.cpp"
+			],
+			[
+				"stat",
+				"station.cpp"
+			],
+			[
+				"rt",
+				"rtc.cpp"
+			],
+			[
+				"resea",
+				"reseau.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 3
+	}
+}

@@ -1,0 +1,32 @@
+# Gitignore file
+####
+
+# Ignore build folders
+#####
+debug/*
+release/*
+*.o
+
+# Ignore backup files
+#####
+*~
+*.backup
+
+# Ignore autotools files
+#####
+Makefile
+Makefile.in
+*/Makefile.in
+aclocal.m4
+autom4te.cache
+compile
+config.log
+config.status
+configure
+depcomp
+install-sh
+missing
+*/.deps
+*.deps
+*.a
+src/happyland

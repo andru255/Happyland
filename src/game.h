@@ -3,6 +3,8 @@
 
 #include "graphics/graphics.h"
 
+#include "characters/player.h"
+
 typedef struct _GameData
 {
 	// Assets
@@ -18,5 +20,9 @@ typedef struct _GameData
 } GameData;
 
 GameData * GameData_new();
+
+void GameData_free(GameData * gd);
+
+void Game_LoadMap(GameData * gd, char * map);
 
 #endif // __GAME_H__

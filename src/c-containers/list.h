@@ -121,8 +121,9 @@ LIST ## _elem_t * LIST ## _add(LIST * array, Indextype index, Valuetype value) \
 	if(array == NULL) \
 		return NULL; \
 	/* Test if index exists */\
-	if(LIST ## _get(array, index) != NULL) \
-		return NULL; \
+	elem = LIST ## _get(array, index);\
+	if(elem != NULL) \
+		return elem; \
 	/* Create the element */\
 	elem = malloc(array->elemSize); \
 	elem->prev = NULL; \

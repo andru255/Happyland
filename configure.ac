@@ -48,5 +48,6 @@ AC_CONFIG_FILES([
 	src/Makefile
 	src/graphics/Makefile
 	src/c-containers/Makefile
+	src/characters/Makefile
 ])
 AC_OUTPUT

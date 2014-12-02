@@ -94,6 +94,7 @@ Asset_list * Asset_load_config()
 	}
 
 	free(orig_buffer);
+	fclose(configFile);
 
 	return assets;
 }
@@ -141,7 +142,12 @@ Asset * Asset_load(char * name)
 	path = malloc(sizeof(char) * (strlen(asset->name) + 6 + ASSETS_DIR_LEN));
 	sprintf(path, "%s/%s.png", ASSETS_DIR, asset->name);
 
-	asset->surface = (SDL_Surface *)IMG_Load(path);
+	asset->surface = IMG_Load(path);
+	if(asset->surface == NULL)
+	{
+		fprintf(stderr, "Error: loading asset '%s' : can't load file %s ; %s\n", name, path, IMG_GetError());
+		return NULL;
+	}
 	SDL_SetColorKey(asset->surface, SDL_TRUE, SDL_MapRGB(asset->surface->format, 0, 0, 0));
 
 	free(path);

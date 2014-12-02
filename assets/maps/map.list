@@ -1,2 +1,8 @@
-[maps]
-example.map
+# This file contains the list of all the maps to load
+#
+# Line starting with '#' are comments
+#
+# Map definition example:
+# filename.map = Map Name
+#
+example.map = Example Map

@@ -1,4 +1,4 @@
-SUBDIRS=graphics c-containers
+SUBDIRS=graphics c-containers characters
 
 if DEBUG
 AM_CFLAGS = -ggdb -O0 -D__DEBUG__
@@ -10,7 +10,8 @@ bin_PROGRAMS=happyland
 
 happyland_LDADD= \
 	graphics/libgraphics.a \
-	c-containers/libccontainers.a
+	c-containers/libccontainers.a \
+	characters/libcharacters.a
 
 happyland_SOURCES = \
 	main.c \

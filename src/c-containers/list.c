@@ -49,7 +49,12 @@ void Ptr_copy(void ** dest, void ** src)
 
 void Str_copy(char ** dest, char ** src)
 {
-	strcpy(*dest, *src);
+	int i = 0;
+	int len = strlen(*src);
+	*dest = malloc(sizeof(char) * len);
+	for(i = 0 ; i < len ; i++)
+		(*dest)[i] = (*src)[i];
+	(*dest)[len] = '\0';
 }
 
 // Free functions

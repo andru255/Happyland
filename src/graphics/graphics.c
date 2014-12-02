@@ -35,9 +35,15 @@ int Graphics_Init()
 
 void Graphics_Close()
 {
-	fprintf(stdout, "Close SDL Image & SDL libs.\n");
+	// Close SDL Image
+	fprintf(stdout, "[PENDING] Close SDL Image"); fflush(stdout);
 	IMG_Quit();
+	fprintf(stdout, "\r[OK] Close SDL Image     \n");
+
+	// Close SDL
+	fprintf(stdout, "[PENDING] Close SDL"); fflush(stdout);
 	SDL_Quit();
+	fprintf(stdout, "\r[OK] Close SDL     \n");
 }
 
 void Graphics_createTileSurface(Asset * asset, Tile * tile)

@@ -15,6 +15,7 @@
 #include "tile.h"
 #include "asset.h"
 #include "map.h"
+#include "character.h"
 
 #include "../error-codes.h"
 #include "../config.h"
@@ -45,9 +46,9 @@ void Graphics_Close();
 void Graphics_createTileSurface(Asset * asset, Tile * tile);
 
 /**
- * [Graphics_getTileRect description]
- * @param out      [description]
- * @param position [description]
+ * Create a Tile rectangle from a SDL_Point
+ * @param out      Output value
+ * @param position Origin of the rect
  */
 void Graphics_getTileRect(SDL_Rect * out, SDL_Point position);
 

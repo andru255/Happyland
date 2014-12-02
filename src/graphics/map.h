@@ -14,11 +14,13 @@
  */
 typedef struct _Map
 {
-	Tile        *** tiles;   ///< Tiles of the map
-	int         **  layers;  ///< Layer identifier for each tile of the map
-	SDL_Rect        clip;    ///< Rect displayed on the screen
-	char        *   name;    ///< Name of the map
-	SDL_Surface *   surface; ///< SDL Surface
+	Tile        *** tiles;    ///< Tiles of the map
+	int         **  layers;   ///< Layer identifier for each tile of the map
+	SDL_Rect        clip;     ///< Rect displayed on the screen
+	char        *   name;     ///< Name of the map
+	char        *   filename; ///< Map filename
+	SDL_Surface *   surface;  ///< SDL Surface
+	bool            loaded;   ///< Flag that indicate if the map is loaded
 
 	int   height;
 	int   width;
@@ -40,7 +42,7 @@ Map_list * Map_load_list();
  * @param  name [description]
  * @return      [description]
  */
-Map * Map_init(char * name);
+Map * Map_init(char * name, char * filename);
 
 /**
  * [Map_load description]
@@ -54,7 +56,7 @@ Map * Map_load(Map * map, Asset_list * assets);
  * @param  name Name of the map to load
  * @return      A filled map structure
  */
-Map * Map_init_load(char * name, Asset_list * assets);
+Map * Map_init_load(char * name, char * filename, Asset_list * assets);
 
 /**
  * Move a map on the screen

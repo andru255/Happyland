@@ -2,7 +2,7 @@
 
 IMPLEMENT_LIST(Map_list,  Map *,  char *, Map_copy, Str_copy, Map_cmp, Str_cmp, Map_free, Str_free);
 
-Map * Map_init(char * name)
+Map * Map_init(char * name, char * filename)
 {
 	#ifdef __DEBUG_MAP_FN__
 	fprintf(stdout, "Map_init(%s)\n", name);
@@ -10,21 +10,24 @@ Map * Map_init(char * name)
 	Map * tmp     = malloc(sizeof(Map));
 	tmp->tiles    = NULL;
 	tmp->name     = calloc(sizeof(char) * strlen(name), sizeof(char));
+	tmp->filename = calloc(sizeof(char) * strlen(filename), sizeof(char));
 	tmp->surface  = NULL;
 	tmp->height   = 0;
 	tmp->width    = 0;
+	tmp->loaded   = false;
 	tmp->tileMap  = Tile_list_new();
 	tmp->tileMap->freeValue = 0;
 	strcpy(tmp->name, name);
+	strcpy(tmp->filename, filename);
 	return tmp;
 }
 
-Map * Map_init_load(char * name, Asset_list * assets)
+Map * Map_init_load(char * name, char * filename, Asset_list * assets)
 {
 	#ifdef __DEBUG_MAP_FN__
 	fprintf(stdout, "Map_init_load(%s, Asset_list[%d])\n", name, assets->size);
 	#endif
-	Map * tmp = Map_init(name);
+	Map * tmp = Map_init(name, filename);
 	tmp = Map_load(tmp, assets);
 	return tmp;
 }
@@ -64,9 +67,13 @@ Map * Map_load(Map * map, Asset_list * assets)
 	int line_number;
 	#endif
 
+	// If map is already loaded
+	// doesn't reload it
+	if(map->loaded) return map;
+
 	// + 6 is for '.map', '/' and '\0'
 	mapFilename = malloc(sizeof(char) * (MAPS_DIR_LEN + strlen(map->name) + 6));
-	sprintf(mapFilename, "%s/%s.map", MAPS_DIR, map->name);
+	sprintf(mapFilename, "%s/%s", MAPS_DIR, map->filename);
 	mapFile = fopen(mapFilename, "r");
 
 	if(mapFile == NULL)
@@ -274,6 +281,7 @@ Map * Map_load(Map * map, Asset_list * assets)
 	free(rawmap);
 	free(rawmaplayer);
 
+	map->loaded = true;
 	return map;
 }
 
@@ -357,6 +365,7 @@ void Map_free(Map * map)
 	Tile_list_free(map->tileMap);
 
 	free(map->name);
+	free(map->filename);
 
 	free(map);
 }
@@ -370,4 +379,45 @@ void Map_copy(Map ** dest, Map ** src)
 int Map_cmp(Map * val1, Map * val2)
 {
 	return memcmp(val1, val2, sizeof(Map));
+}
+
+Map_list * Map_load_list()
+{
+	Map_list * maps        = NULL;
+	FILE     * listFile    = NULL;
+	char     * buffer      = calloc(sizeof(char) * 255, sizeof(char));
+	char     * orig_buffer = buffer;
+	char     * mapFilename = NULL;
+	char     * mapName     = NULL;
+
+	listFile = fopen(MAPS_LIST_FILE, "r");
+
+	if(listFile == NULL)
+	{
+		fprintf(stderr, "Unable to open %s : ", MAPS_LIST_FILE);
+		perror(NULL);
+	}
+	else
+	{
+		maps = Map_list_new();
+		while(fgets(buffer, 255, listFile) != NULL)
+		{
+
+			trim(&buffer);
+			if(buffer[0] != '#' && buffer[0] != '\0')
+			{
+				mapFilename = buffer;
+				mapName = cut(mapFilename, '=');
+				trim(&mapFilename);
+				trim(&mapName);
+
+				// Load and add the map to the list
+				Map_list_add(maps, mapName, Map_init(mapName, mapFilename));
+			}
+		}
+	}
+
+	free(orig_buffer);
+	fclose(listFile);
+	return maps;
 }

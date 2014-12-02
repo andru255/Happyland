@@ -1,0 +1,17 @@
+#
+# Character definition file
+#
+# Player character (the dog)
+#
+[options]
+height = 40
+width  = 32
+
+
+[arc1.png]
+default =   2,44
+jump    =  36,44
+walk    =  36,44
+slide   =  70,44
+crawl1  = 206,44
+crawl2  = 240,44

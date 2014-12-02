@@ -4,11 +4,12 @@
 #define ASSETS_DIR         "./assets/graphics"
 #define ASSETS_CONFIG_FILE "./assets/graphics/assets.conf"
 
-#define MAPS_DIR "./assets/maps"
+#define MAPS_DIR       "./assets/maps"
+#define MAPS_LIST_FILE "./assets/maps/map.list"
 
-#define __DEBUG__
+//#define __DEBUG__
 //#define __DEBUG_LVL_0__
-#define __DEBUG_LVL_1__
+//#define __DEBUG_LVL_1__
 //#define __DEBUG_LVL_2__
 //#define __DEBUG_LVL_3__
 

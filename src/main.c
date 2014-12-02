@@ -3,16 +3,11 @@
 
 int main(int argc, char ** argv)
 {
-	//Array    * assets;
-	GameData * gd;
+	GameData  * gd = NULL;
+	Player    * player = NULL;
+	CharacterSurface * dog = NULL;
+	SDL_Rect blitRect;
 	int i, j;
-	Asset_list_elem_t * assetIt;
-	Tile_list_elem_t * tileIt;
-
-	// Test variables
-	SDL_Window  * window;
-	SDL_Surface * screen;
-	Map * exampleMap = NULL;
 
 	// Initialize graphics stack
 	if(Graphics_Init() != 0)
@@ -24,34 +19,27 @@ int main(int argc, char ** argv)
 	atexit(Graphics_Close);
 
 	gd = GameData_new();
+	Game_LoadMap(gd, "Example Map");
 
-	for(assetIt = gd->assets->array ; assetIt != NULL ; assetIt = assetIt->next)
+	dog = CharacterSurface_new();
+	if(!CharacterSurface_load(dog, "./assets/characters/player.character"))
 	{
-		fprintf(stdout, "Asset: %s\n", assetIt->value->name);
-		for(tileIt = assetIt->value->tiles->array ; tileIt != NULL ; tileIt = tileIt->next)
-			fprintf(stdout, "\tTile: %s - loaded: %s\n", tileIt->value->name, tileIt->value->loaded ? "true":"false");
+		fprintf(stderr, "Unable to load DOG\n");
+		exit(-6);
 	}
 
-	// Load Map list
-	fprintf(stdout, "[PENDING] Load map list"); fflush(stdout);
-	exampleMap = Map_init_load("example", gd->assets);
-	if(exampleMap != NULL) fprintf(stdout, "\r[OK] Load map list     \n");
-	else                   fprintf(stdout, "\r[ERROR] Load map list     \n");
+	player = Player_new();
+	player->surface = CharacterSurface_get(dog, CS_DEFAULT);
 
-	SDL_FillRect(gd->screen,NULL, SDL_MapRGB(gd->screen->format, exampleMap->background_color.r, exampleMap->background_color.g, exampleMap->background_color.b));
-	SDL_BlitSurface(exampleMap->surface, NULL, gd->screen, NULL);
+	SDL_BlitSurface(player->surface, NULL, gd->screen, NULL);
 	SDL_UpdateWindowSurface(gd->window);
 
 	pause();
 
-	SDL_DestroyWindow(gd->window);
+	GameData_free(gd);
 
-	// Free Game Data
-	fprintf(stdout, "Map_free... "); fflush(stdout);
-	Map_free(exampleMap);
-	fprintf(stdout, "[OK]\n");
-	fprintf(stdout, "Asset_array_free... "); fflush(stdout);
-	Asset_list_free(gd->assets);
-	fprintf(stdout, "[OK]\n");
+	CharacterSurface_free(dog);
+	Player_free(player);
+
 	return ERR_SUCCESS;
 }

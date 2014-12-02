@@ -1,30 +1,39 @@
 #include "map.h"
 
-IMPLEMENT_ARRAY(Map_array,  Map *,  char *, Map_copy, Str_copy, Map_cmp, Str_cmp, Map_free, Str_free);
+IMPLEMENT_LIST(Map_list,  Map *,  char *, Map_copy, Str_copy, Map_cmp, Str_cmp, Map_free, Str_free);
 
 Map * Map_init(char * name)
 {
+	#ifdef __DEBUG_MAP_FN__
+	fprintf(stdout, "Map_init(%s)\n", name);
+	#endif
 	Map * tmp     = malloc(sizeof(Map));
 	tmp->tiles    = NULL;
 	tmp->name     = calloc(sizeof(char) * strlen(name), sizeof(char));
 	tmp->surface  = NULL;
 	tmp->height   = 0;
 	tmp->width    = 0;
-	tmp->tileMap  = Tile_array_new();
+	tmp->tileMap  = Tile_list_new();
 	tmp->tileMap->freeValue = 0;
 	strcpy(tmp->name, name);
 	return tmp;
 }
 
-Map * Map_init_load(char * name, Asset_array * assets)
+Map * Map_init_load(char * name, Asset_list * assets)
 {
+	#ifdef __DEBUG_MAP_FN__
+	fprintf(stdout, "Map_init_load(%s, Asset_list[%d])\n", name, assets->size);
+	#endif
 	Map * tmp = Map_init(name);
 	tmp = Map_load(tmp, assets);
 	return tmp;
 }
 
-Map * Map_load(Map * map, Asset_array * assets)
+Map * Map_load(Map * map, Asset_list * assets)
 {
+	#ifdef __DEBUG_MAP_FN__
+	fprintf(stdout, "Map_load(%s, Asset_list[%d])\n", map->name, assets->size);
+	#endif
 	FILE * mapFile     = NULL;
 	char * mapFilename = NULL;
 	char * buffer      = malloc(sizeof(char) * 255);
@@ -51,6 +60,10 @@ Map * Map_load(Map * map, Asset_array * assets)
 	bool inMap      = false;
 	bool inMapLayer = false;
 
+	#ifdef __DEBUG_MAP_LOAD__
+	int line_number;
+	#endif
+
 	// + 6 is for '.map', '/' and '\0'
 	mapFilename = malloc(sizeof(char) * (MAPS_DIR_LEN + strlen(map->name) + 6));
 	sprintf(mapFilename, "%s/%s.map", MAPS_DIR, map->name);
@@ -63,6 +76,9 @@ Map * Map_load(Map * map, Asset_array * assets)
 	}
 	else
 	{
+		#ifdef __DEBUG_MAP_LOAD__
+		line_number = 0;
+		#endif
 		while(fgets(buffer, 255, mapFile) != NULL)
 		{
 			trim(&buffer);
@@ -72,6 +88,10 @@ Map * Map_load(Map * map, Asset_array * assets)
 				trimComment(&buffer);
 				lineLen = strlen(buffer);
 
+				#if defined(__DEBUG_MAP_LOAD__) && defined(__DEBUG_PARSING_SHOW_LINES__)
+				fprintf(stdout, "Line %04d: %s\n", line_number++, buffer);
+				#endif
+
 				if(buffer[0] == '[' && buffer[lineLen - 1] == ']')
 				{
 					// Extract the name
@@ -80,6 +100,9 @@ Map * Map_load(Map * map, Asset_array * assets)
 
 					if(strcmp(buffer, "options") == 0)
 					{
+						#ifdef __DEBUG_MAP_LOAD__
+						fprintf(stdout, "\nMap_load: [options]\n");
+						#endif
 						inOptions  = true;
 						inTiles    = false;
 						inMap      = false;
@@ -87,6 +110,9 @@ Map * Map_load(Map * map, Asset_array * assets)
 					}
 					else if(strcmp(buffer, "tiles") == 0)
 					{
+						#ifdef __DEBUG_MAP_LOAD__
+						fprintf(stdout, "\nMap_load: [tiles]\n");
+						#endif
 						inOptions  = false;
 						inTiles    = true;
 						inMap      = false;
@@ -94,6 +120,9 @@ Map * Map_load(Map * map, Asset_array * assets)
 					}
 					else if(strcmp(buffer, "map") == 0)
 					{
+						#ifdef __DEBUG_MAP_LOAD__
+						fprintf(stdout, "\nMap_load: [map]\n");
+						#endif
 						inOptions  = false;
 						inTiles    = false;
 						inMap      = true;
@@ -101,6 +130,9 @@ Map * Map_load(Map * map, Asset_array * assets)
 					}
 					else if(strcmp(buffer, "map-layers") == 0)
 					{
+						#ifdef __DEBUG_MAP_LOAD__
+						fprintf(stdout, "\nMap_load: [map-layers]\n");
+						#endif
 						inOptions  = false;
 						inTiles    = false;
 						inMap      = false;
@@ -115,6 +147,10 @@ Map * Map_load(Map * map, Asset_array * assets)
 					val = cut(key, '=');
 					trim(&key);
 					trim(&val);
+
+					#ifdef __DEBUG_MAP_LOAD__
+					fprintf(stdout, "Map_load: %s = %s\n", key, val);
+					#endif
 
 					     if(strcmp(key, "width") == 0)  map->width = atoi(val);
 					else if(strcmp(key, "height") == 0) map->height = atoi(val);
@@ -141,7 +177,15 @@ Map * Map_load(Map * map, Asset_array * assets)
 					val = cut(key, '=');
 					trim(&key);
 					trim(&val);
-					Tile_array_add(map->tileMap, (int)strtol(val, NULL, 16), Asset_get(assets, key));
+
+					#ifdef __DEBUG_MAP_LOAD__
+					fprintf(stdout, "Map_load: %s = %d\n", key, (int)strtol(val, NULL, 16));
+					#endif
+
+					//if(Asset_get(assets, key) != NULL)
+						Tile_list_add(map->tileMap, (int)strtol(val, NULL, 16), Asset_get(assets, key));
+					//else
+					//	fprintf(stderr, "Unable to get tile\n");
 				}
 				else if(inMap)
 				{
@@ -155,12 +199,29 @@ Map * Map_load(Map * map, Asset_array * assets)
 						rawmap = calloc((sizeof(long int) * map->width * map->height) + 1, sizeof(long int));
 
 					trim(&buffer);
+
+					#ifdef __DEBUG_MAP_LOAD__
+					fprintf(stdout, "Map_load: ");
+					fflush(stdout);
+					#endif
+
 					strIterator = strtok(buffer, ",");
 					while(strIterator != NULL)
 					{
 						rawmap[rawmapPos++] = strtol(strIterator, NULL, 16);
+						#ifdef __DEBUG_MAP_LOAD__
+						if(rawmap[rawmapPos - 1] == 0)
+							fprintf(stdout, "   ,");
+						else
+							fprintf(stdout, "%3d,", rawmap[rawmapPos - 1]);
+						fflush(stdout);
+						#endif
 						strIterator = strtok(NULL, ",");
 					}
+
+					#ifdef __DEBUG_MAP_LOAD__
+					fprintf(stdout, "\n");
+					#endif
 				}
 				else if(inMapLayer)
 				{
@@ -174,12 +235,29 @@ Map * Map_load(Map * map, Asset_array * assets)
 						rawmaplayer = calloc((sizeof(int) * map->width * map->height) + 1, sizeof(int));
 
 					trim(&buffer);
+
+					#ifdef __DEBUG_MAP_LOAD__
+					fprintf(stdout, "Map_load: ");
+					fflush(stdout);
+					#endif
+
 					strIterator = strtok(buffer, ",");
 					while(strIterator != NULL)
 					{
 						rawmaplayer[rawmaplayerPos++] = (int)strtol(strIterator, NULL, 16);
+						#ifdef __DEBUG_MAP_LOAD__
+						if(rawmaplayer[rawmaplayerPos - 1] == 0)
+							fprintf(stdout, "   ,");
+						else
+							fprintf(stdout, "%3d,", rawmaplayer[rawmaplayerPos - 1]);
+						fflush(stdout);
+						#endif
 						strIterator = strtok(NULL, ",");
 					}
+
+					#ifdef __DEBUG_MAP_LOAD__
+					fprintf(stdout, "\n");
+					#endif
 				}
 			}
 		}
@@ -201,7 +279,7 @@ Map * Map_load(Map * map, Asset_array * assets)
 
 bool Map_render(Map * map, long int * rawmap, int * rawmaplayer)
 {
-	Tile_array_elem_t * tile;
+	Tile_list_elem_t * tile;
 	SDL_Rect blitRect;
 	int i, j;
 
@@ -230,7 +308,7 @@ bool Map_render(Map * map, long int * rawmap, int * rawmaplayer)
 			// Fill map->tiles
 			if(rawmap[(map->width * i) + j] != 0)
 			{
-				tile = Tile_array_get(map->tileMap, rawmap[(map->width * i) + j]);
+				tile = Tile_list_get(map->tileMap, rawmap[(map->width * i) + j]);
 				if(tile == NULL)
 				{
 					fprintf(stderr, "Unable to get tile #%d in map '%s' at [%d, %d]\n", rawmap[(map->width * i) + j]);
@@ -276,7 +354,7 @@ void Map_free(Map * map)
 
 	SDL_FreeSurface(map->surface);
 
-	Tile_array_free(map->tileMap);
+	Tile_list_free(map->tileMap);
 
 	free(map->name);
 

@@ -10,7 +10,7 @@ int Graphics_Init()
 	int SDL_FLAGS = SDL_INIT_TIMER | SDL_INIT_AUDIO | SDL_INIT_VIDEO | SDL_INIT_EVENTS;
 	int SDL_IMAGE_FLAGS = IMG_INIT_PNG;
 
-	fprintf(stdout, "[PENDING] Initialize SDL");
+	fprintf(stdout, "[PENDING] Initialize SDL"); fflush(stdout);
 	if(SDL_Init(SDL_FLAGS) != 0)
 	{
 		fprintf(stdout, "\r[ERROR] Initialize SDL. See error log for more information.\n");
@@ -20,7 +20,7 @@ int Graphics_Init()
 	}
 	fprintf(stdout, "\r[OK] Initialize SDL.     \n");
 
-	fprintf(stdout, "[PENDING] Initialize SDL Image");
+	fprintf(stdout, "[PENDING] Initialize SDL Image"); fflush(stdout);
 	if(IMG_Init(SDL_IMAGE_FLAGS) & SDL_IMAGE_FLAGS != SDL_IMAGE_FLAGS)
 	{
 		fprintf(stdout, "\r[ERROR] Initialize SDL Image. See error log for more information.\n");

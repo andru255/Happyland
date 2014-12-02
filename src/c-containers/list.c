@@ -1,4 +1,4 @@
-#include "array.h"
+#include "list.h"
 
 // Compare functions
 int Int_cmp(int n1, int n2)

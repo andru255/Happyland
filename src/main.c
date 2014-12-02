@@ -4,8 +4,10 @@
 int main(int argc, char ** argv)
 {
 	//Array    * assets;
-	GameData   gameData;
+	GameData * gd;
 	int i, j;
+	Asset_list_elem_t * assetIt;
+	Tile_list_elem_t * tileIt;
 
 	// Test variables
 	SDL_Window  * window;
@@ -21,46 +23,35 @@ int main(int argc, char ** argv)
 	// Register graphics stack close on exit
 	atexit(Graphics_Close);
 
-	// Load game data
-	fprintf(stdout, "Asset_load_config... "); fflush(stdout);
-	gameData.assets = Asset_load_config();
-	fprintf(stdout, "[OK]\n");
+	gd = GameData_new();
 
-	// Load example Map
-	fprintf(stdout, "Map_load... "); fflush(stdout);
-	exampleMap = Map_init_load("example", gameData.assets);
-
-	if(exampleMap != NULL) fprintf(stdout, "[OK]\n");
-	else                   fprintf(stdout, "[ERROR]\n");
-
-	// Start Game
-	window = SDL_CreateWindow("Happyland",
-		SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-		800, 600,
-		SDL_WINDOW_OPENGL
-	);
-
-	if (window == NULL) {
-		// In the event that the window could not be made...
-		printf("Could not create window: %s\n", SDL_GetError());
-		return 1;
+	for(assetIt = gd->assets->array ; assetIt != NULL ; assetIt = assetIt->next)
+	{
+		fprintf(stdout, "Asset: %s\n", assetIt->value->name);
+		for(tileIt = assetIt->value->tiles->array ; tileIt != NULL ; tileIt = tileIt->next)
+			fprintf(stdout, "\tTile: %s - loaded: %s\n", tileIt->value->name, tileIt->value->loaded ? "true":"false");
 	}
 
-	screen = SDL_GetWindowSurface(window);
-	SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, exampleMap->background_color.r, exampleMap->background_color.g, exampleMap->background_color.b));
-	SDL_BlitSurface(exampleMap->surface, NULL, screen, NULL);
-	SDL_UpdateWindowSurface(window);
+	// Load Map list
+	fprintf(stdout, "[PENDING] Load map list"); fflush(stdout);
+	exampleMap = Map_init_load("example", gd->assets);
+	if(exampleMap != NULL) fprintf(stdout, "\r[OK] Load map list     \n");
+	else                   fprintf(stdout, "\r[ERROR] Load map list     \n");
+
+	SDL_FillRect(gd->screen,NULL, SDL_MapRGB(gd->screen->format, exampleMap->background_color.r, exampleMap->background_color.g, exampleMap->background_color.b));
+	SDL_BlitSurface(exampleMap->surface, NULL, gd->screen, NULL);
+	SDL_UpdateWindowSurface(gd->window);
 
 	pause();
 
-	SDL_DestroyWindow(window);
+	SDL_DestroyWindow(gd->window);
 
 	// Free Game Data
 	fprintf(stdout, "Map_free... "); fflush(stdout);
 	Map_free(exampleMap);
 	fprintf(stdout, "[OK]\n");
 	fprintf(stdout, "Asset_array_free... "); fflush(stdout);
-	Asset_array_free(gameData.assets);
+	Asset_list_free(gd->assets);
 	fprintf(stdout, "[OK]\n");
 	return ERR_SUCCESS;
 }

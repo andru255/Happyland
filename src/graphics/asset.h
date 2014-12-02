@@ -15,7 +15,7 @@
  * Load assets from the config file
  * @return Array of asset
  */
-Asset_array * Asset_load_config();
+Asset_list * Asset_load_config();
 
 /**
  * Get a TileConfig struct
@@ -59,7 +59,7 @@ int Asset_cmp(Asset * val1, Asset * val2);
  * @param  path   [description]
  * @return        [description]
  */
-Tile * Asset_get(Asset_array * assets, char * path);
+Tile * Asset_get(Asset_list * assets, char * path);
 
 
 #endif // __ASSET_H__

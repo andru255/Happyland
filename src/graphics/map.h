@@ -2,6 +2,8 @@
 #define __MAP_H__
 
 #include "../utils.h"
+#include "../config.h"
+#include "../c-containers/list.h"
 
 #include "tile.h"
 #include "asset.h"
@@ -22,10 +24,16 @@ typedef struct _Map
 	int   width;
 	Color background_color;
 
-	Tile_array * tileMap;
+	Tile_list * tileMap;
 } Map;
 
-NEW_ARRAY_DEFINITION(Map_array, Map *, char *);
+NEW_LIST_DEFINITION(Map_list, Map *, char *);
+
+/**
+ * Load the map list
+ * @return The Map List
+ */
+Map_list * Map_load_list();
 
 /**
  * [Map_init description]
@@ -39,14 +47,14 @@ Map * Map_init(char * name);
  * @param  assets [description]
  * @return        [description]
  */
-Map * Map_load(Map * map, Asset_array * assets);
+Map * Map_load(Map * map, Asset_list * assets);
 
 /**
  * Load a map from a file to memory
  * @param  name Name of the map to load
  * @return      A filled map structure
  */
-Map * Map_init_load(char * name, Asset_array * assets);
+Map * Map_init_load(char * name, Asset_list * assets);
 
 /**
  * Move a map on the screen

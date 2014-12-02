@@ -6,11 +6,14 @@
 typedef struct _GameData
 {
 	// Assets
-	Asset_array * assets;
+	Asset_list * assets;
 
 	// Maps
-	Map ** maps;
-	int    nbrMaps;
+	Map_list * maps;
+
+	// SDL Window
+	SDL_Window  * window;
+	SDL_Surface * screen;
 
 } GameData;
 

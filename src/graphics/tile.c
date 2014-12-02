@@ -1,7 +1,7 @@
 #include "tile.h"
 
 
-IMPLEMENT_ARRAY(Tile_array,  Tile *,  int, Tile_copy,  Int_copy, Tile_cmp,  Int_cmp, Tile_free,  Int_free);
+IMPLEMENT_LIST(Tile_list,  Tile *,  int, Tile_copy,  Int_copy, Tile_cmp,  Int_cmp, Tile_free,  Int_free);
 
 Tile * Tile_new(char * name)
 {

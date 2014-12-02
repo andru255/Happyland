@@ -2,7 +2,6 @@
 #define __UTILS_H__
 
 #include <SDL2/SDL.h>
-#include "array.h"
 
 typedef enum _bool
 {

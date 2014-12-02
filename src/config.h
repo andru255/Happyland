@@ -6,6 +6,12 @@
 
 #define MAPS_DIR "./assets/maps"
 
+#define __DEBUG__
+//#define __DEBUG_LVL_0__
+#define __DEBUG_LVL_1__
+//#define __DEBUG_LVL_2__
+//#define __DEBUG_LVL_3__
+
 
 // Don't modify anithing below this line
 // =====================================
@@ -27,6 +33,34 @@
     #define GMASK (0x0000ff00)
     #define BMASK (0x00ff0000)
     #define AMASK (0xff000000)
+#endif
+
+#if defined(__DEBUG__)
+
+	#if defined(__DEBUG_LVL_3__)
+		#define __DEBUG_LVL_0__
+		#define __DEBUG_LVL_1__
+		#define __DEBUG_LVL_2__
+
+		#define __DEBUG_PARSING_SHOW_LINES__
+	#endif
+
+	#if defined(__DEBUG_LVL_2__)
+		#define __DEBUG_LVL_0__
+		#define __DEBUG_LVL_1__
+	#endif
+
+	#if defined(__DEBUG_LVL_1__)
+		#define __DEBUG_LVL_0__
+
+		#define __DEBUG_MAP_LOAD__
+	#endif
+
+	#if defined(__DEBUG_LVL_0__)
+		#define __DEBUG_MAP_FN__
+		#define __DEBUG_ASSET_LOAD__
+	#endif
+
 #endif
 
 #endif // __CONFIG_H__

@@ -2,7 +2,7 @@
 #define __STRUCTURES_H__
 
 #include "../utils.h"
-#include "../array.h"
+#include "../c-containers/list.h"
 
 /**
  * This struct contain information
@@ -17,16 +17,16 @@ typedef struct _Tile
 	SDL_Surface * surface;     ///< SDL Surface
 } Tile;
 
-NEW_ARRAY_DEFINITION(Tile_array,  Tile *,  int);
+NEW_LIST_DEFINITION(Tile_list,  Tile *,  int);
 
 
 typedef struct _Asset
 {
 	char        * name;     ///< Asset Name
 	SDL_Surface * surface;  ///< SDL_Surface
-	Tile_array  * tiles;    ///< Tiles of the asset
+	Tile_list   * tiles;    ///< Tiles of the asset
 } Asset;
 
-NEW_ARRAY_DEFINITION(Asset_array, Asset *, int);
+NEW_LIST_DEFINITION(Asset_list, Asset *, int);
 
 #endif // __STRUCTURES_H__

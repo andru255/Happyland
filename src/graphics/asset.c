@@ -1,9 +1,12 @@
 #include "asset.h"
 
-IMPLEMENT_ARRAY(Asset_array, Asset *, int, Asset_copy, Int_copy, Asset_cmp, Int_cmp, Asset_free, Int_free);
+IMPLEMENT_LIST(Asset_list, Asset *, int, Asset_copy, Int_copy, Asset_cmp, Int_cmp, Asset_free, Int_free);
 
-Asset_array * Asset_load_config()
+Asset_list * Asset_load_config()
 {
+	#ifdef __DEBUG_ASSET_LOAD__
+	fprintf(stdout, "\nAsset_load_config()\n");
+	#endif
 	FILE   * configFile  = NULL;
 	char   * buffer      = malloc(sizeof(char) * 255);
 	char   * orig_buffer = buffer;
@@ -15,7 +18,7 @@ Asset_array * Asset_load_config()
 	int      nbrAssets   = 0;
 	Asset  * asset       = NULL;
 	Tile   * tile        = NULL;
-	Asset_array * assets = NULL;
+	Asset_list * assets = NULL;
 
 	int i;
 
@@ -28,7 +31,7 @@ Asset_array * Asset_load_config()
 	}
 	else
 	{
-		assets = Asset_array_new();
+		assets = Asset_list_new();
 		while(fgets(buffer, 255, configFile) != NULL)
 		{
 			trim(&buffer);
@@ -47,7 +50,10 @@ Asset_array * Asset_load_config()
 					buffer = buffer + 1;
 
 					// Allocate memory for the new asset
-					asset = Asset_array_add(assets, assets->size + 1, Asset_load(buffer))->value;
+					asset = Asset_list_add(assets, assets->size + 1, Asset_load(buffer))->value;
+					#ifdef __DEBUG_ASSET_LOAD__
+					fprintf(stdout, "Asset_load_config: [%s] => ok\n", asset->name);
+					#endif
 				}
 				// New tile
 				else if(asset != NULL)
@@ -65,12 +71,23 @@ Asset_array * Asset_load_config()
 					trim(&posY);
 
 					// Allocate memory for the new tile
-					tile = Tile_array_add(asset->tiles, asset->tiles->size + 1, Tile_new(tileName))->value;
+					tile = Tile_list_add(asset->tiles, asset->tiles->size + 1, Tile_new(tileName))->value;
+
+					#ifdef __DEBUG_ASSET_LOAD__
+					fprintf(stdout, "Asset_load_config: %s.%s => load... ", asset->name, tile->name);
+					#endif
 
 					tile->posOnAsset.x = atoi(posX);
 					tile->posOnAsset.y = atoi(posY);
 
 					Tile_load(asset, tile->name);
+
+					#ifdef __DEBUG_ASSET_LOAD__
+					if(tile->loaded)
+						fprintf(stdout, "ok\n");
+					else
+						fprintf(stdout, "error\n");
+					#endif
 				}
 			}
 		}
@@ -83,7 +100,7 @@ Asset_array * Asset_load_config()
 
 Tile * Asset_getTile(Asset * asset, char * name)
 {
-	Tile_array_elem_t * it;
+	Tile_list_elem_t * it;
 	for(it = asset->tiles->array ; it != NULL ; it = it->next)
 	{
 		if(strcmp(it->value->name, name) == 0)
@@ -92,12 +109,12 @@ Tile * Asset_getTile(Asset * asset, char * name)
 	return NULL;
 }
 
-Tile * Asset_get(Asset_array * assets, char * path)
+Tile * Asset_get(Asset_list * assets, char * path)
 {
 	int i;
 	char * assetName;
 	char * tileName;
-	Asset_array_elem_t * it;
+	Asset_list_elem_t * it;
 
 	assetName = trimCpy(path);
 	tileName  = cut(assetName, '.');
@@ -116,7 +133,7 @@ Asset * Asset_load(char * name)
 	char  * path;
 	Asset * asset = malloc(sizeof(Asset));
 	asset->surface  = NULL;
-	asset->tiles    = Tile_array_new();
+	asset->tiles    = Tile_list_new();
 	asset->name     = malloc(sizeof(char) * strlen(name));
 	strcpy(asset->name, name);
 
@@ -141,7 +158,7 @@ void Asset_free(Asset * asset)
 		if(asset->surface != NULL)
 			SDL_FreeSurface(asset->surface);
 
-		Tile_array_free(asset->tiles);
+		Tile_list_free(asset->tiles);
 
 		free(asset);
 	}

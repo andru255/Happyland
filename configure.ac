@@ -47,5 +47,6 @@ AC_CONFIG_FILES([
 	Makefile
 	src/Makefile
 	src/graphics/Makefile
+	src/c-containers/Makefile
 ])
 AC_OUTPUT

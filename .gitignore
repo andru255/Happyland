@@ -30,3 +30,7 @@ missing
 *.deps
 *.a
 src/happyland
+
+# Ignore SVN stuff
+#####
+.svn

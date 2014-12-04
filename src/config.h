@@ -7,6 +7,11 @@
 #define MAPS_DIR       "./assets/maps"
 #define MAPS_LIST_FILE "./assets/maps/map.list"
 
+#define CHARACTER_DIR       "./assets/characters"
+#define CHARACTER_LIST_FILE "./assets/characters/character.list"
+
+#define AUDIO_BITRATE 22050
+
 //#define __DEBUG__
 //#define __DEBUG_LVL_0__
 //#define __DEBUG_LVL_1__
@@ -21,8 +26,9 @@
 #define TILE_HEIGHT 32
 #define TILE_WIDTH  32
 
-#define ASSETS_DIR_LEN sizeof(ASSETS_DIR)
-#define MAPS_DIR_LEN   sizeof(MAPS_DIR)
+#define ASSETS_DIR_LEN    sizeof(ASSETS_DIR)
+#define MAPS_DIR_LEN      sizeof(MAPS_DIR)
+#define CHARACTER_DIR_LEN sizeof(CHARACTER_DIR)
 
 #if SDL_BYTEORDER == SDL_BIG_ENDIAN
     #define RMASK (0xff000000)

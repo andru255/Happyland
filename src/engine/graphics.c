@@ -9,6 +9,7 @@ int Graphics_Init()
 {
 	int SDL_FLAGS = SDL_INIT_TIMER | SDL_INIT_AUDIO | SDL_INIT_VIDEO | SDL_INIT_EVENTS;
 	int SDL_IMAGE_FLAGS = IMG_INIT_PNG;
+	int SDL_MIXER_FLAGS = MIX_INIT_OGG;
 
 	fprintf(stdout, "[PENDING] Initialize SDL"); fflush(stdout);
 	if(SDL_Init(SDL_FLAGS) != 0)
@@ -30,11 +31,34 @@ int Graphics_Init()
 	}
 	fprintf(stdout, "\r[OK] Initialize SDL Image.     \n");
 
+	fprintf(stdout, "[PENDING] Initialize SDL Mixer"); fflush(stdout);
+	if(Mix_Init(SDL_MIXER_FLAGS) & SDL_MIXER_FLAGS != SDL_MIXER_FLAGS)
+	{
+		fprintf(stdout, "\r[ERROR] Initialize SDL Mixer. See error log for more information.\n");
+		fprintf(stderr, "Unable to initialize SDL Mixer : %s\n", Mix_GetError());
+
+		return 3;
+	}
+
+	if(Mix_OpenAudio(AUDIO_BITRATE, MIX_DEFAULT_FORMAT, 2, 1024) == -1)
+	{
+		fprintf(stdout, "\r[ERROR] Initialize SDL Mixer. See error log for more information.\n");
+		fprintf(stderr, "Unable to initialize SDL Mixer : %s\n", Mix_GetError());
+
+		return 3;
+	}
+	fprintf(stdout, "\r[OK] Initialize SDL Mixer.     \n");
 	return 0;
 }
 
 void Graphics_Close()
 {
+	// Close SDL Mixer
+	fprintf(stdout, "[PENDING] Close SDL Mixer"); fflush(stdout);
+	Mix_CloseAudio();
+	Mix_Quit();
+	fprintf(stdout, "\r[OK] Close SDL Mixer     \n");
+
 	// Close SDL Image
 	fprintf(stdout, "[PENDING] Close SDL Image"); fflush(stdout);
 	IMG_Quit();

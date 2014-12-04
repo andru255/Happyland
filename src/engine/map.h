@@ -22,6 +22,8 @@ typedef struct _Map
 	SDL_Surface *   surface;  ///< SDL Surface
 	bool            loaded;   ///< Flag that indicate if the map is loaded
 
+	SDL_Point startPos;
+
 	int   height;
 	int   width;
 	Color background_color;

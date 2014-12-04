@@ -1,0 +1,8 @@
+# This file contains the list of all the characters to load
+#
+# Line starting with '#' are comments
+#
+# Character definition example:
+# filename.character = Character Name
+#
+dog.character = The Dog

@@ -43,13 +43,11 @@ int Tile_cmp(Tile * val1, Tile * val2)
 
 Tile * Tile_load(Asset * asset, char * name)
 {
-	SDL_Rect blitRect;
 	Tile * tile = Asset_getTile(asset, name);
 
 	if(tile->surface == NULL)
 		Graphics_createTileSurface(asset, tile);
 
 	tile->loaded = true;
-
 	return tile;
 }

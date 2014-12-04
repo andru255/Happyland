@@ -15,12 +15,9 @@ Asset_list * Asset_load_config()
 	char   * posX        = NULL;
 	char   * posY        = NULL;
 	int      lineLen     = 0;
-	int      nbrAssets   = 0;
 	Asset  * asset       = NULL;
 	Tile   * tile        = NULL;
 	Asset_list * assets = NULL;
-
-	int i;
 
 	configFile = fopen(ASSETS_CONFIG_FILE, "r");
 
@@ -112,7 +109,6 @@ Tile * Asset_getTile(Asset * asset, char * name)
 
 Tile * Asset_get(Asset_list * assets, char * path)
 {
-	int i;
 	char * assetName;
 	char * tileName;
 	Asset_list_elem_t * it;
@@ -156,7 +152,6 @@ Asset * Asset_load(char * name)
 
 void Asset_free(Asset * asset)
 {
-	int i;
 	if(asset != NULL)
 	{
 		free(asset->name);

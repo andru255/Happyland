@@ -23,15 +23,14 @@ AM_CONDITIONAL(DEBUG, test x"$debug" = x"true")
 AC_PROG_CC
 
 # Checks for libraries.
-# FIXME: Replace `main' with a function in `-lSDL2':
 AC_CHECK_LIB(SDL2, SDL_Init)
-# FIXME: Replace `main' with a function in `-lSDL2_image':
 AC_CHECK_LIB(SDL2_image, IMG_Init)
+AC_CHECK_LIB(SDL2_mixer, Mix_Init)
 # FIXME: Replace `main' with a function in `-lpthread':
 #AC_CHECK_LIB([pthread], [main])
 
 # Checks for header files.
-AC_CHECK_HEADERS(stdlib.h string.h stdio.h errno.h SDL2/SDL.h SDL2/SDL_image.h)
+AC_CHECK_HEADERS(stdlib.h string.h stdio.h errno.h SDL2/SDL.h SDL2/SDL_image.h SDL2/SDL_mixer.h)
 
 # Checks for typedefs, structures, and compiler characteristics.
 #AC_CHECK_HEADER_STDBOOL
@@ -46,7 +45,7 @@ AC_PROG_RANLIB
 AC_CONFIG_FILES([
 	Makefile
 	src/Makefile
-	src/graphics/Makefile
+	src/engine/Makefile
 	src/c-containers/Makefile
 	src/characters/Makefile
 ])

@@ -1,0 +1,24 @@
+#
+# Character definition file
+#
+# The Dog
+#
+[options]
+height = 40
+width  = 32
+
+[arc1.png]
+right.default =   2,44
+right.jump    =  36,44
+right.walk    =  36,44
+right.slide   =  70,44
+right.crawl1  = 206,44
+right.crawl2  = 240,44
+
+[arc1_mirror.png]
+left.default = 606,44
+left.jump    = 572,44
+left.walk    = 572,44
+left.slide   = 538,44
+left.crawl1  = 402,44
+left.crawl2  = 368,44

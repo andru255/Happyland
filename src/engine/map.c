@@ -17,6 +17,8 @@ Map * Map_init(char * name, char * filename)
 	tmp->loaded   = false;
 	tmp->tileMap  = Tile_list_new();
 	tmp->tileMap->freeValue = 0;
+	tmp->startPos.x = -1;
+	tmp->startPos.y = -1;
 	strcpy(tmp->name, name);
 	strcpy(tmp->filename, filename);
 	return tmp;
@@ -49,8 +51,7 @@ Map * Map_load(Map * map, Asset_list * assets)
 	int * rawmaplayer    = NULL;
 	int   rawmaplayerPos = 0;
 
-	SDL_Rect blitRect;
-	int i, j;
+	int i;
 	Uint8 tmpRGB[3];
 
 	char * key = NULL;
@@ -72,9 +73,10 @@ Map * Map_load(Map * map, Asset_list * assets)
 	if(map->loaded) return map;
 
 	// + 6 is for '.map', '/' and '\0'
-	mapFilename = malloc(sizeof(char) * (MAPS_DIR_LEN + strlen(map->name) + 6));
+	mapFilename = calloc(sizeof(char) * (MAPS_DIR_LEN + strlen(map->name) + 6), sizeof(char));
 	sprintf(mapFilename, "%s/%s", MAPS_DIR, map->filename);
 	mapFile = fopen(mapFilename, "r");
+	free(mapFilename);
 
 	if(mapFile == NULL)
 	{
@@ -276,7 +278,7 @@ Map * Map_load(Map * map, Asset_list * assets)
 		return NULL;
 	}
 
-	free(mapFilename);
+	fclose(mapFile);
 	free(orig_buffer);
 	free(rawmap);
 	free(rawmaplayer);
@@ -290,6 +292,7 @@ bool Map_render(Map * map, long int * rawmap, int * rawmaplayer)
 	Tile_list_elem_t * tile;
 	SDL_Rect blitRect;
 	int i, j;
+	bool startPosDefined = false;
 
 	map->surface = SDL_CreateRGBSurface(0, map->width * TILE_WIDTH, map->height * TILE_HEIGHT, 32, RMASK, GMASK, BMASK, AMASK);
 	if(map->surface == NULL)
@@ -334,6 +337,12 @@ bool Map_render(Map * map, long int * rawmap, int * rawmaplayer)
 
 			// Fill map->layers
 			map->layers[i][j] = rawmaplayer[(map->width * i) + j];
+			if(map->layers[i][j] == 0xB)
+			{
+				map->startPos.x = j;
+				map->startPos.y = i;
+				startPosDefined = true;
+			}
 
 			blitRect.x += TILE_WIDTH;
 		}
@@ -341,6 +350,9 @@ bool Map_render(Map * map, long int * rawmap, int * rawmaplayer)
 		blitRect.x = 0;
 		blitRect.y += TILE_HEIGHT;
 	}
+
+	if(!startPosDefined)
+		fprintf(stderr, "Warning: Map %s, no start point defined.", map->name);
 
 	return true;
 }
@@ -391,7 +403,6 @@ Map_list * Map_load_list()
 	char     * mapName     = NULL;
 
 	listFile = fopen(MAPS_LIST_FILE, "r");
-
 	if(listFile == NULL)
 	{
 		fprintf(stderr, "Unable to open %s : ", MAPS_LIST_FILE);

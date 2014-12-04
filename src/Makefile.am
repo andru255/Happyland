@@ -1,4 +1,4 @@
-SUBDIRS=graphics c-containers characters
+SUBDIRS=engine c-containers characters
 
 if DEBUG
 AM_CFLAGS = -ggdb -O0 -D__DEBUG__
@@ -9,7 +9,7 @@ endif
 bin_PROGRAMS=happyland
 
 happyland_LDADD= \
-	graphics/libgraphics.a \
+	engine/libengine.a \
 	c-containers/libccontainers.a \
 	characters/libcharacters.a
 

@@ -1,8 +1,8 @@
 
 
-noinst_LIBRARIES = libgraphics.a
+noinst_LIBRARIES = libengine.a
 
-libgraphics_a_SOURCES = structures.h \
+libengine_a_SOURCES = structures.h \
 	graphics.c graphics.h \
 	asset.c asset.h \
 	map.c map.h \

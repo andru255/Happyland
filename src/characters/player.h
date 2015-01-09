@@ -1,19 +1,11 @@
 #ifndef __PLAYER_H__
 #define __PLAYER_H__
 
+#include <assert.h>
+
 #include "../config.h"
 #include "../engine/graphics.h"
-
-typedef struct _Player {
-	char                 * name;
-	CharacterState         state;
-	CharacterOrientation   orientation;
-	SDL_Surface          * surface;
-	CharacterSurface     * character;
-	SDL_Rect               position;
-} Player;
-
-NEW_LIST_DEFINITION(PlayerList, Player *, char *);
+#include "../structures.h"
 
 /**
  * Create a Player object
@@ -42,8 +34,15 @@ int Player_cmp(Player * p1, Player * p2);
  */
 void Player_copy(Player ** dst, Player ** src);
 
-void Player_GetBlitRect(Player * player, SDL_Rect * rect);
 
-void Player_UpdateSurface(Player * player);
+void Player_SetCharacter(Player * player, CharacterSurface * cs);
+
+void Player_UpdateSurface(Player * player, Map * map);
+
+void Player_ResetSpeed(Player * player);
+
+void Player_ApplyGravity(Player * player, int gravity);
+
+bool Player_HaveColision(Player * player, Map * map);
 
 #endif // __PLAYER_H__

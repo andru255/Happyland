@@ -3,6 +3,7 @@
 
 #include <string.h>
 #include <stdio.h>
+#include <assert.h>
 
 void triml(char ** buffer);
 void trimr(char ** buffer);

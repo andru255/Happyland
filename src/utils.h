@@ -1,7 +1,10 @@
 #ifndef __UTILS_H__
 #define __UTILS_H__
 
+#include <assert.h>
 #include <SDL2/SDL.h>
+
+#include "config.h"
 
 typedef enum _bool
 {

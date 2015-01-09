@@ -1,35 +1,10 @@
 #ifndef __GAME_H__
 #define __GAME_H__
 
+#include <assert.h>
+
 #include "engine/graphics.h"
-
 #include "characters/player.h"
-
-typedef struct _GameData
-{
-	// Assets
-	Asset_list * assets;
-
-	// Maps
-	Map_list * maps;
-	Map      * currentMap;
-	char     * currentMapName;
-
-	// Characters
-	CharacterList * characters;
-
-	// Music
-	Mix_Music * theme;
-	bool isThemePlaying;
-
-	// Players
-	PlayerList * players;
-
-	// SDL Window
-	SDL_Window  * window;
-	SDL_Surface * screen;
-
-} GameData;
 
 GameData * GameData_new();
 
@@ -70,5 +45,6 @@ void Game_LoadMap(GameData * gd, Map * map);
 void Game_SelectMap(GameData * gd, char * mapName);
 void Game_DisplayMap(GameData * gd, Map * map, bool updateWindow);
 void Game_UpdateDisplay(GameData * gd);
+void Game_ApplyCollision(GameData * gd, Player * player);
 
 #endif // __GAME_H__

@@ -11,7 +11,7 @@ void pause()
 		switch(event.type)
 		{
 			case SDL_QUIT:
-				continuer = false;
+			continuer = false;
 		}
 	}
 }

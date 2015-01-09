@@ -6,26 +6,14 @@ int main(int argc, char ** argv)
 	GameData  * gd = NULL;
 	Player    * player = NULL;
 	SDL_Rect destRect;
-	int walkCpt, fallCpt;
 	bool continuer = true;
-	unsigned int lastTick      = 0;
-	unsigned int currentTick = 0;
 	SDL_Event event;
 
 	bool goLeft   = false;
 	bool goRight  = false;
 	bool goUp     = false;
-	bool walk     = false;
-	bool jump     = false;
-	bool fall     = false;
-	bool inJump   = false;
-	bool inFall   = false;
-	bool gravity  = false;
-	bool startJumping = false;
-	bool resetDog = false;
 
-	unsigned int startJump_pos = 0;
-	unsigned int maxJump_pos = 0;
+	float upCpt = 0;
 
 	// Initialize graphics stack
 	if(Graphics_Init() != 0)
@@ -48,11 +36,8 @@ int main(int argc, char ** argv)
 
 	Game_UpdateDisplay(gd);
 
-	walkCpt = 0;
-
 	while (continuer)
 	{
-		lastTick = SDL_GetTicks();
 		if(SDL_PollEvent(&event) == 1)
 		{
 			switch(event.type)
@@ -81,14 +66,10 @@ int main(int argc, char ** argv)
 					{
 						case SDLK_RIGHT:
 							goRight = false;
-							walkCpt = 0;
-							resetDog = true;
 							break;
 
 						case SDLK_LEFT:
-							goLeft = false;
-							walkCpt = 0;
-							resetDog = true;
+							goLeft  = false;
 							break;
 
 						case SDLK_UP:
@@ -105,105 +86,37 @@ int main(int argc, char ** argv)
 
 		if(goLeft && !goRight)
 		{
-			player->position.x -= 5;
-			walk = true;
+			player->speed.x = -5;
 		}
 
 		if(goRight && !goLeft)
 		{
-			player->position.x += 5;
-			walk = true;
+			player->speed.x = 5;
 		}
 
 		if(goUp)
 		{
-			if(!inJump && !inFall)
-			{
-				inJump = true;
-				startJump_pos = player->position.y;
-				maxJump_pos   = player->position.y - (TILE_HEIGHT * 2);
-			}
+			if(upCpt == 0)
+				player->inJump = true;
+			goUp = false;
 		}
 
-		if(inJump)
+		if(player->inJump)
 		{
-			if(player->position.y > maxJump_pos)
+			if(upCpt <= 2.0*sqrt(TILE_HEIGHT*3.0))
 			{
-				player->position.y -= 10;
-				jump = true;
+				//jump = true;
+				player->speed.y = -(int)(2.0*(sqrt(TILE_HEIGHT*3.0)-upCpt));
+				upCpt += 1;
 			}
 			else
 			{
-				inFall   = true;
-				inJump   = false;
-				fall     = false;
-				resetDog = true;
+				player->inJump  = false;
+				upCpt           = 0;
 			}
 		}
 
-		if(inFall)
-		{
-			if(player->position.y < startJump_pos)
-			{
-				player->position.y += 10;
-				fall    = true;
-				fallCpt = 0;
-			}
-			else
-			{
-				fall     = false;
-				resetDog = true;
-				if(!goUp)
-				{
-					inFall   = false;
-					inJump   = false;
-				}
-			}
-		}
-
-		if(goLeft)  player->orientation = CO_LEFT;
-		if(goRight) player->orientation = CO_RIGHT;
-
-		if(jump)
-		{
-			player->state = CS_JUMP;
-			Game_UpdateDisplay(gd);
-			jump = false;
-		}
-		else if(fall)
-		{
-			fallCpt++;
-			if(fallCpt < 10) player->state = CS_DEFAULT;
-			else             player->state = CS_SLIDE;
-
-			Game_UpdateDisplay(gd);
-			fall = false;
-		}
-		else if(walk)
-		{
-			walkCpt++;
-			if(player->state == CS_DEFAULT && walkCpt == 5)
-			{
-				player->state = CS_WALK;
-				walkCpt = 0;
-			}
-			else if((player->state == CS_WALK && walkCpt == 5) || resetDog)
-			{
-				player->state = CS_DEFAULT;
-				walkCpt = 0;
-				resetDog = false;
-			}
-
-			Game_UpdateDisplay(gd);
-			walk = false;
-		}
-		else if(resetDog)
-		{
-			player->state = CS_DEFAULT;
-			Game_UpdateDisplay(gd);
-			resetDog = false;
-		}
-
+		Game_UpdateDisplay(gd);
 		SDL_Delay(25);
 	}
 

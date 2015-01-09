@@ -2,6 +2,7 @@
 
 void triml(char ** buffer)
 {
+	assert(*buffer != NULL);
 	while((*buffer)[0] == ' ' || (*buffer)[0] == '\t')
 		*buffer = *buffer + 1;
 }
@@ -9,6 +10,7 @@ void triml(char ** buffer)
 void trimr(char ** buffer)
 {
 	int i;
+	assert(*buffer != NULL);
 	for(i = strlen(*buffer) - 1 ; i > -1 ; i--)
 	{
 		if((*buffer)[i] == ' '  ||
@@ -25,6 +27,7 @@ void trimComment(char ** buffer)
 {
 	int sizeStr = strlen(*buffer);
 	int i;
+	assert(*buffer != NULL);
 	for(i = 0; i < sizeStr ; i++)
 	{
 		if((*buffer)[i] == '#')
@@ -54,6 +57,7 @@ char * cut(char * buffer, char delim)
 	int i;
 	int bufferSize = strlen(buffer);
 	char * out = NULL;
+	assert(buffer != NULL);
 
 	for(i = 0 ; i < bufferSize ; i++)
 	{

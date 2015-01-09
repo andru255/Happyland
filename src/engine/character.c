@@ -34,6 +34,8 @@ CharacterSurface * CharacterSurface_new()
 
 void CharacterSurface_free(CharacterSurface * val)
 {
+	if(val == NULL) return;
+
 	if(val->loaded)
 	{
 		// Free right surfaces
@@ -56,11 +58,13 @@ void CharacterSurface_free(CharacterSurface * val)
 
 int CharacterSurface_cmp(CharacterSurface * val1, CharacterSurface * val2)
 {
+	assert(val1 != NULL && val2 != NULL);
 	return memcmp(val1, val2, sizeof(CharacterSurface));
 }
 
 void CharacterSurface_copy(CharacterSurface ** dest, CharacterSurface ** src)
 {
+	assert(*src != NULL);
 	*dest = calloc(sizeof(CharacterSurface), sizeof(CharacterSurface));
 	memcpy(*dest, *src, sizeof(CharacterSurface));
 }
@@ -326,8 +330,8 @@ CharacterList * CharacterSurface_LoadList()
 
 SDL_Surface * CharacterSurface_get(CharacterSurface * cs, CharacterState state, CharacterOrientation orientation)
 {
+	assert(cs != NULL);
 	if(!cs->loaded) return NULL;
-
 	switch(state)
 	{
 		case CS_JUMP:    return orientation == CO_RIGHT ? cs->jump_r   : cs->jump_l;

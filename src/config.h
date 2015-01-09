@@ -4,6 +4,9 @@
 #define ASSETS_DIR         "./assets/graphics"
 #define ASSETS_CONFIG_FILE "./assets/graphics/assets.conf"
 
+#define TILE_HEIGHT 32
+#define TILE_WIDTH  32
+
 #define MAPS_DIR       "./assets/maps"
 #define MAPS_LIST_FILE "./assets/maps/map.list"
 
@@ -11,6 +14,8 @@
 #define CHARACTER_LIST_FILE "./assets/characters/character.list"
 
 #define AUDIO_BITRATE 22050
+
+#define GRAVITY 20
 
 //#define __DEBUG__
 //#define __DEBUG_LVL_0__
@@ -21,10 +26,6 @@
 
 // Don't modify anithing below this line
 // =====================================
-
-
-#define TILE_HEIGHT 32
-#define TILE_WIDTH  32
 
 #define ASSETS_DIR_LEN    sizeof(ASSETS_DIR)
 #define MAPS_DIR_LEN      sizeof(MAPS_DIR)
@@ -55,6 +56,8 @@
 	#if defined(__DEBUG_LVL_2__)
 		#define __DEBUG_LVL_0__
 		#define __DEBUG_LVL_1__
+
+		#define __DEBUG_COLLISION__
 	#endif
 
 	#if defined(__DEBUG_LVL_1__)

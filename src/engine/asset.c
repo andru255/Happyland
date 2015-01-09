@@ -11,9 +11,10 @@ Asset_list * Asset_load_config()
 	char   * buffer      = malloc(sizeof(char) * 255);
 	char   * orig_buffer = buffer;
 	char   * tileName    = NULL;
-	char   * tileSize    = NULL;
+	char   * tileOptions = NULL;
 	char   * posX        = NULL;
 	char   * posY        = NULL;
+	char   * shape       = NULL;
 	int      lineLen     = 0;
 	Asset  * asset       = NULL;
 	Tile   * tile        = NULL;
@@ -56,22 +57,31 @@ Asset_list * Asset_load_config()
 				else if(asset != NULL)
 				{
 					// Extract name
-					tileName = buffer;
-					tileSize = cut(tileName, '=');
+					tileName    = buffer;
+					tileOptions = cut(tileName, '=');
 					trim(&tileName);
-					trim(&tileSize);
+					trim(&tileOptions);
 
 					// Extract position
-					posX = tileSize;
+					/*posX = tileSize;
 					posY = cut(tileSize, ',');
+					trim(&posX);
+					trim(&posY);*/
+
+					posX  = strtok(tileOptions, ",");
+					posY  = strtok(NULL, ",");
+					shape = strtok(NULL, ",");
+
 					trim(&posX);
 					trim(&posY);
 
 					// Allocate memory for the new tile
 					tile = Tile_list_add(asset->tiles, asset->tiles->size + 1, Tile_new(tileName))->value;
 
+					tile->shape = TileShape_FromStr(shape);
+
 					#ifdef __DEBUG_ASSET_LOAD__
-					fprintf(stdout, "Asset_load_config: %s.%s => load... ", asset->name, tile->name);
+					fprintf(stdout, "Asset_load_config: %s.%s (shape: %s) => load... ", asset->name, tile->name, TileShape_ToStr(tile->shape));
 					#endif
 
 					tile->posOnAsset.x = atoi(posX);

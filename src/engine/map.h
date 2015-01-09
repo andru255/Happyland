@@ -1,37 +1,15 @@
 #ifndef __MAP_H__
 #define __MAP_H__
 
+#include <assert.h>
+
 #include "../utils.h"
 #include "../config.h"
 #include "../c-containers/list.h"
 
+#include "structures.h"
 #include "tile.h"
 #include "asset.h"
-
-/**
- * This struct contain information
- * about a map
- */
-typedef struct _Map
-{
-	Tile        *** tiles;    ///< Tiles of the map
-	int         **  layers;   ///< Layer identifier for each tile of the map
-	SDL_Rect        clip;     ///< Rect displayed on the screen
-	char        *   name;     ///< Name of the map
-	char        *   filename; ///< Map filename
-	SDL_Surface *   surface;  ///< SDL Surface
-	bool            loaded;   ///< Flag that indicate if the map is loaded
-
-	SDL_Point startPos;
-
-	int   height;
-	int   width;
-	Color background_color;
-
-	Tile_list * tileMap;
-} Map;
-
-NEW_LIST_DEFINITION(Map_list, Map *, char *);
 
 /**
  * Load the map list
@@ -84,5 +62,17 @@ void Map_free(Map * map);
 
 void Map_copy(Map ** dest, Map ** src);
 int Map_cmp(Map * val1, Map * val2);
+
+Layer Map_GetPixelLayer(Map * map, int x, int y);
+
+bool Layer_IsSolid(Layer layer);
+
+void Layer_FillPixels(Layer ** layerMap, int x, int y, Layer value, TileShape shape);
+
+char * Layer_GetName(Layer layer);
+
+void Map_AddLayerOverlay(Map * map, SDL_Surface * dest);
+
+Layer Map_ConvertEdgeToLayer(char * value);
 
 #endif // __MAP_H__

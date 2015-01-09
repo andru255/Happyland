@@ -4,20 +4,212 @@
 		"selected_items":
 		[
 			[
-				"Game",
-				"Game_UpdateDisplay"
+				"L_",
+				"L_BG_SOFT"
 			],
 			[
-				"pla",
-				"playerIt"
+				"edge",
+				"edge_left"
+			],
+			[
+				"layer",
+				"layerMap"
 			],
 			[
 				"TILE",
+				"TILE_WIDTH"
+			],
+			[
+				"TS_MID",
+				"TS_MID_LEFT"
+			],
+			[
+				"TileShape",
+				"TileShape_ToStr"
+			],
+			[
+				"shape",
+				"shapeStr"
+			],
+			[
+				"TileShae",
+				"TileShape_FromStr"
+			],
+			[
+				"colisionOn",
+				"colisionOnX"
+			],
+			[
+				"col",
+				"colisionOnY"
+			],
+			[
+				"po",
+				"points"
+			],
+			[
+				"LB",
+				"L_BG_SOFT"
+			],
+			[
+				"coli",
+				"colisionOnX"
+			],
+			[
+				"colisi",
+				"collisionOnX"
+			],
+			[
+				"coll",
+				"collisionOnX"
+			],
+			[
+				"player",
+				"player"
+			],
+			[
+				"no",
+				"nocollision"
+			],
+			[
+				"TILE_",
 				"TILE_HEIGHT"
 			],
 			[
+				"Uint",
+				"Uint32"
+			],
+			[
+				"cu",
+				"currentColor"
+			],
+			[
+				"curr",
+				"currentColor"
+			],
+			[
+				"L_D",
+				"L_DEATH"
+			],
+			[
+				"L_BG",
+				"L_BG_SOFT"
+			],
+			[
+				"L_F",
+				"L_FG_SOFT"
+			],
+			[
+				"ch",
+				"characters"
+			],
+			[
+				"Layer",
+				"Layer_IsSolid"
+			],
+			[
+				"struc",
+				"structures"
+			],
+			[
+				"__",
+				"__STRUCTURES_SRC_H__"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"plaer",
+				"player"
+			],
+			[
+				"pl",
+				"player"
+			],
+			[
+				"ff",
+				"fflush"
+			],
+			[
+				"Game",
+				"Game_ApplyCollision"
+			],
+			[
+				"pso",
+				"position"
+			],
+			[
+				"L_FG",
+				"L_FG_SOLID"
+			],
+			[
+				"L_BG_",
+				"L_BG_SOLID"
+			],
+			[
 				"TIL",
+				"TILE_HEIGHT"
+			],
+			[
+				"L_FG_S",
+				"L_FG_SOFT"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"char",
+				"charSurface"
+			],
+			[
+				"PLayer_",
+				"Player_SetCharacter"
+			],
+			[
+				"CS",
+				"CS_JUMP"
+			],
+			[
+				"go",
+				"goUp"
+			],
+			[
+				"cpBody",
+				"cpBodyResetForces"
+			],
+			[
+				"staic",
+				"staticBody"
+			],
+			[
+				"cpSpaceAdd",
+				"cpSpaceAddBody"
+			],
+			[
+				"static",
+				"staticBody"
+			],
+			[
+				"TILE_W",
 				"TILE_WIDTH"
+			],
+			[
+				"cpSpaceA",
+				"cpSpaceAddShape"
+			],
+			[
+				"tmp",
+				"tmpShape"
+			],
+			[
+				"cpSh",
+				"cpShapeSetFriction"
+			],
+			[
+				"cpVe",
+				"cpVect2SDL_Rect"
 			],
 			[
 				"start",
@@ -30,10 +222,6 @@
 			[
 				"Player",
 				"Player1"
-			],
-			[
-				"char",
-				"characters"
 			],
 			[
 				"Game_R",
@@ -84,10 +272,6 @@
 				"currentMap"
 			],
 			[
-				"cu",
-				"currentMap"
-			],
-			[
 				"Map_l",
 				"Map_list_get"
 			],
@@ -97,10 +281,6 @@
 			],
 			[
 				"chara",
-				"character"
-			],
-			[
-				"ch",
 				"character"
 			],
 			[
@@ -146,10 +326,6 @@
 			[
 				"jum",
 				"jump_l"
-			],
-			[
-				"go",
-				"goRight"
 			],
 			[
 				"star",
@@ -284,10 +460,6 @@
 				"__DEBUG_ASSET_LOAD__"
 			],
 			[
-				"__",
-				"__DEBUG_LVL_2__"
-			],
-			[
 				"__DEBUG",
 				"__DEBUG_MAP_LOAD__"
 			],
@@ -342,178 +514,6 @@
 			[
 				"_show",
 				"_showMessage"
-			],
-			[
-				"_shwo",
-				"_showMessage"
-			],
-			[
-				"_sho",
-				"_showMessage"
-			],
-			[
-				"tmp",
-				"tmpRGB"
-			],
-			[
-				"R",
-				"RMASK"
-			],
-			[
-				"Tile_a",
-				"Tile_array"
-			],
-			[
-				"Tile",
-				"Tile_array"
-			],
-			[
-				"Tile_array",
-				"Tile_array_elem_t"
-			],
-			[
-				"Tile_arr",
-				"Tile_array_get"
-			],
-			[
-				"rawmap",
-				"rawmapIt"
-			],
-			[
-				"rawm",
-				"rawmapIt"
-			],
-			[
-				"Asset_arr",
-				"Asset_array"
-			],
-			[
-				"mem",
-				"memcpy"
-			],
-			[
-				"nbr",
-				"nbrTiles"
-			],
-			[
-				"IMPL",
-				"IMPLEMENT_ARRAY_FN_FREE"
-			],
-			[
-				"ARRAY",
-				"ARRAY_FN_FREE"
-			],
-			[
-				"_fre",
-				"_freeIndex"
-			],
-			[
-				"arra",
-				"array"
-			],
-			[
-				"IMPLMEN",
-				"IMPLEMENT_ARRAY"
-			],
-			[
-				"gme",
-				"gameData"
-			],
-			[
-				"As",
-				"Asset_cmp"
-			],
-			[
-				"NEW_",
-				"NEW_ARRAY_DEFINITION"
-			],
-			[
-				"REL",
-				"RELEASE_FLAGS"
-			],
-			[
-				"wit",
-				"width"
-			],
-			[
-				"tile",
-				"tiles"
-			],
-			[
-				"array",
-				"array->_cmpIndex"
-			],
-			[
-				"example",
-				"exampleMap"
-			],
-			[
-				"Map",
-				"Map_load"
-			],
-			[
-				"exa",
-				"exampleMap"
-			],
-			[
-				"Ma",
-				"Map_load"
-			],
-			[
-				"ff",
-				"fflush"
-			],
-			[
-				"nb",
-				"nbrTiles"
-			],
-			[
-				"Int",
-				"Int_free"
-			],
-			[
-				"IMPLEM",
-				"IMPLEMENT_ARRAY"
-			],
-			[
-				"Array",
-				"Array_Tile"
-			],
-			[
-				"DEBU",
-				"DEBUG_BUILD_DIR"
-			],
-			[
-				"deb",
-				"DEBUG_LIBS"
-			],
-			[
-				"DE",
-				"DEBUG_FLAGS"
-			],
-			[
-				"IMPLEMENT_A",
-				"IMPLEMENT_ARRAY_FN_NEW"
-			],
-			[
-				"NEW",
-				"NEW_ARRAY_DEFINITION"
-			],
-			[
-				"In",
-				"IntArray"
-			],
-			[
-				"prev",
-				"previous"
-			],
-			[
-				"_fr",
-				"_freeValue"
-			],
-			[
-				"_free",
-				"_freeIndex"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "src/main.c",
 			"settings":
 			{
-				"buffer_size": 3717,
+				"buffer_size": 2102,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,71 +531,18 @@
 			"file": "src/game.c",
 			"settings":
 			{
-				"buffer_size": 5077,
+				"buffer_size": 6812,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"contents": "#include \"player.h\"\n\nIMPLEMENT_LIST(PlayerList,  Player *,  char *, Player_copy, Str_copy, Player_cmp, Str_cmp, Player_free, Str_free);\n\nPlayer * Player_new(char * name)\n{\n	Player * tmp = NULL;\n	assert(name != NULL);\n	tmp = calloc(sizeof(tmp), sizeof(Player));\n	tmp->name = calloc(sizeof(char) * strlen(name), sizeof(char));\n	tmp->state       = CS_DEFAULT;\n	tmp->orientation = CO_RIGHT;\n	tmp->surface     = NULL;\n	tmp->character   = NULL;\n	tmp->position.x  = 0;\n	tmp->position.y  = 0;\n	tmp->position.h  = 0;\n	tmp->position.w  = 0;\n	tmp->speed.x     = 0;\n	tmp->speed.y     = 0;\n	tmp->inJump      = false;\n	tmp->collision   = false;\n	tmp->walkCpt     = 0;\n	strcpy(tmp->name, name);\n	return tmp;\n}\n\nvoid Player_free(Player * val)\n{\n	if(val != NULL)\n	{\n		free(val->name);\n		free(val);\n	}\n}\n\nint Player_cmp(Player * p1, Player * p2)\n{\n	assert(p1 != NULL);\n	assert(p2 != NULL);\n	return memcmp(p1, p2, sizeof(Player));\n}\n\nvoid Player_copy(Player ** dst, Player ** src)\n{\n	assert(*src != NULL);\n	*dst = calloc(sizeof(Player), sizeof(Player));\n	memcpy(*dst, *src, sizeof(Player));\n}\n\nvoid Player_SetCharacter(Player * player, CharacterSurface * cs)\n{\n	assert(player != NULL);\n	assert(cs != NULL);\n	player->character = cs;\n	player->position.h = player->character->size.h;\n	player->position.w = player->character->size.w;\n	player->surface    = CharacterSurface_get(player->character, player->state, player->orientation);\n}\n\nbool Player_HaveColision(Player * player, Map * map)\n{\n	SDL_Point pt[6];\n	Layer points[6] = {L_BG_SOFT, L_BG_SOFT, L_BG_SOFT, L_BG_SOFT, L_BG_SOFT, L_BG_SOFT};\n\n	assert(player != NULL && map != NULL);\n\n	// Top left\n	pt[0].x = player->position.x;\n	pt[0].y = player->position.y;\n\n	// Top Right\n	pt[1].x = player->position.x + player->position.w - 1;\n	pt[1].y = player->position.y;\n\n	// Bottom right\n	pt[2].x = player->position.x + player->position.w - 1;\n	pt[2].y = player->position.y + player->position.h - 1;\n\n	// Bottom left\n	pt[3].x = player->position.x;\n	pt[3].y = player->position.y + player->position.h - 1;\n\n	// Middle left\n	pt[4].x = player->position.x;\n	pt[4].y = player->position.y + player->position.h / 2;\n\n	// Middle Right\n	pt[5].x = player->position.x + player->position.w - 1;\n	pt[5].y = player->position.y + player->position.h / 2;\n\n	points[0] = Map_GetPixelLayer(map, pt[0].x, pt[0].y);\n	points[1] = Map_GetPixelLayer(map, pt[1].x, pt[1].y);\n	points[2] = Map_GetPixelLayer(map, pt[2].x, pt[2].y);\n	points[3] = Map_GetPixelLayer(map, pt[3].x, pt[3].y);\n	points[4] = Map_GetPixelLayer(map, pt[4].x, pt[4].y);\n	points[5] = Map_GetPixelLayer(map, pt[5].x, pt[5].y);\n\n	#ifdef __DEBUG_COLLISION__\n		fprintf(stdout, \"\\rCollision: top-lef[%3d,%3d]:%s top-rig[%3d,%3d]:%s bot-rig[%3d,%3d]:%s bot-lef[%3d,%3d]:%s mid-left[%3d,%3d]:%s mid-rig[%3d,%3d]:%s\",\n			pt[0].x, pt[0].y, Layer_GetName(points[0]),\n			pt[1].x, pt[1].y, Layer_GetName(points[1]),\n			pt[2].x, pt[2].y, Layer_GetName(points[2]),\n			pt[3].x, pt[3].y, Layer_GetName(points[3]),\n			pt[4].x, pt[4].y, Layer_GetName(points[4]),\n			pt[5].x, pt[5].y, Layer_GetName(points[5])\n		);\n	#endif\n\n	return Layer_IsSolid(points[0]) || Layer_IsSolid(points[1]) || Layer_IsSolid(points[2]) || Layer_IsSolid(points[3]) || Layer_IsSolid(points[4]) || Layer_IsSolid(points[5]);\n}\n\nvoid Player_UpdateSurface(Player * player, Map * map)\n{\n	SDL_Rect target      = {0,0,0,0};\n	bool     endmove     = false;\n	bool     colision    = false;\n	bool     colisionOnX = false;\n	bool     colisionOnY = false;\n\n\n	assert(player != NULL);\n\n	// Update state\n\n	if(player->speed.x == 0 && player->speed.y == 0)\n		player->state = CS_DEFAULT;\n	else\n	{\n		if(player->speed.x != 0)\n		{\n			player->walkCpt++;\n			if(player->state == CS_DEFAULT && player->walkCpt == 5)\n			{\n				player->state = CS_WALK;\n				player->walkCpt = 0;\n			}\n			else if(player->state == CS_WALK && player->walkCpt == 5)\n			{\n				player->state = CS_DEFAULT;\n				player->walkCpt = 0;\n			}\n\n			if(player->speed.x > 0)\n				player->orientation = CO_RIGHT;\n			else if(player->speed.x < 0)\n				player->orientation = CO_LEFT;\n		}\n\n		if(player->speed.y < 0)\n		{\n			player->state = CS_JUMP;\n		}\n		else if(player->speed.y > 0)\n		{\n			player->state = CS_SLIDE;\n		}\n	}\n\n	player->surface  = CharacterSurface_get(player->character, player->state, player->orientation);\n\n	// If a map is open check for collision\n	if(map != NULL)\n	{\n		// Set move target\n		target.x = player->position.x + player->speed.x;\n		target.y = player->position.y + player->speed.y;\n\n		endmove = false;\n		while(!endmove && (player->speed.x != 0 || player->speed.y != 0))\n		{\n			// Move\n			if(player->position.x != target.x && !colisionOnX)\n			{\n				     if(player->speed.x > 0) player->position.x++;\n				else if(player->speed.x < 0) player->position.x--;\n			}\n\n			if(player->position.y != target.y && !colisionOnY)\n			{\n				     if(player->speed.y > 0) player->position.y++;\n				else if(player->speed.y < 0) player->position.y--;\n			}\n\n			if(Player_HaveColision(player, map))\n			{\n				// Go backward in no collision place\n				     if(player->speed.x > 0) player->position.x--;\n				else if(player->speed.x < 0) player->position.x++;\n\n				     if(player->speed.y > 0) player->position.y--;\n				else if(player->speed.y < 0) player->position.y++;\n\n				// Find collision axis\n				if(player->position.x != target.x && !colisionOnX)\n				{\n					     if(player->speed.x > 0) player->position.x++;\n					else if(player->speed.x < 0) player->position.x--;\n\n					if(Player_HaveColision(player, map))\n					{\n						colisionOnX = true;\n						     if(player->speed.x > 0) player->position.x--;\n						else if(player->speed.x < 0) player->position.x++;\n					}\n				}\n\n				if(player->position.y != target.y && !colisionOnY)\n				{\n					     if(player->speed.y > 0) player->position.y++;\n					else if(player->speed.y < 0) player->position.y--;\n\n					if(Player_HaveColision(player, map))\n					{\n						colisionOnY = true;\n						     if(player->speed.y > 0) player->position.y--;\n						else if(player->speed.y < 0) player->position.y++;\n					}\n				}\n\n				if(colisionOnX && colisionOnY)\n					endmove = true;\n			}\n\n			if((player->position.x == target.x && player->position.y == target.y) ||\n			   (colisionOnY && colisionOnX) ||\n			   (colisionOnY && player->position.x == target.x) ||\n			   (colisionOnX && player->position.y == target.y) ||\n			   (colisionOnX && player->position.x == target.x) ||\n			   (colisionOnY && player->position.y == target.y)\n			   )\n				endmove = true;\n		}\n\n		// Apply Gravity if needed\n		if(player->speed.y == 0 && !player->inJump || colision)\n		{\n			// Test if player is on flat\n			player->position.y++;\n\n			if(Player_HaveColision(player, map))\n				player->position.y--;\n			else\n			{\n				endmove = false;\n				target.y = player->position.y + 20;\n				while(!endmove)\n				{\n					if(player->position.y != target.y)\n						player->position.y++;\n\n					if(Player_HaveColision(player, map))\n					{\n						endmove = true;\n						player->position.y--;\n					}\n\n					if(player->position.y == target.y)\n						endmove = true;\n				}\n			}\n		}\n	}\n	// If no map open just move player\n	else\n	{\n		// Apply Speed\n		player->position.x += player->speed.x;\n		player->position.y += player->speed.y;\n\n		// Apply Gravity\n		player->position.y += GRAVITY;\n	}\n\n	Player_ResetSpeed(player);\n}\n\nvoid Player_ResetSpeed(Player * player)\n{\n	assert(player != NULL);\n	player->speed.x = 0;\n	player->speed.y = 0;\n}\n\nvoid Player_ApplyGravity(Player * player, int gravity)\n{\n	assert(player != NULL);\n	if(!player->inJump)\n		player->speed.y = gravity;\n}\n\nvoid Player_AddOverlay(Player * player, SDL_Surface * screen)\n{\n	static SDL_Color color = {0x00, 0x00, 0x00, 0x50};\n	SDL_Surface * overlay = SDL_CreateRGBSurface(0, player->character->size.w, player->character->size.h, 32, RMASK, GMASK, BMASK, AMASK);\n\n	SDL_FillRect(overlay, NULL,\n		SDL_MapRGBA(\n			overlay->format,\n			color.r,\n			color.g,\n			color.b,\n			color.a\n		)\n	);\n\n	SDL_BlitSurface(overlay, NULL, screen, &(player->position));\n	SDL_FreeSurface(overlay);\n}",
 			"file": "src/characters/player.c",
+			"file_size": 7944,
+			"file_write_time": 130652694939002655,
 			"settings":
 			{
-				"buffer_size": 1164,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/engine/character.c",
-			"settings":
-			{
-				"buffer_size": 10708,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/engine/map.c",
-			"settings":
-			{
-				"buffer_size": 10392,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/maps/example.map",
-			"settings":
-			{
-				"buffer_size": 823,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/engine/character.h",
-			"settings":
-			{
-				"buffer_size": 3329,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/characters/player.h",
-			"settings":
-			{
-				"buffer_size": 1038,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/game.h",
-			"settings":
-			{
-				"buffer_size": 1491,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/engine/map.h",
-			"settings":
-			{
-				"buffer_size": 1936,
+				"buffer_size": 7944,
 				"line_ending": "Unix"
 			}
 		},
@@ -603,7 +550,119 @@
 			"file": "src/config.h",
 			"settings":
 			{
-				"buffer_size": 1569,
+				"buffer_size": 1619,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/maps/example.map",
+			"settings":
+			{
+				"buffer_size": 1726,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/graphics/assets.conf",
+			"settings":
+			{
+				"buffer_size": 1431,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/engine/asset.c",
+			"settings":
+			{
+				"buffer_size": 4323,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/engine/tile.c",
+			"settings":
+			{
+				"buffer_size": 2099,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/engine/map.c",
+			"settings":
+			{
+				"buffer_size": 14365,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/utils.c",
+			"settings":
+			{
+				"buffer_size": 199,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/engine/map.h",
+			"settings":
+			{
+				"buffer_size": 1664,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/utils.h",
+			"settings":
+			{
+				"buffer_size": 263,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/engine/character.h",
+			"settings":
+			{
+				"buffer_size": 1944,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/characters/player.h",
+			"settings":
+			{
+				"buffer_size": 971,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/structures.h",
+			"settings":
+			{
+				"buffer_size": 890,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/engine/structures.h",
+			"settings":
+			{
+				"buffer_size": 3873,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/engine/tile.h",
+			"settings":
+			{
+				"buffer_size": 1271,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/game.h",
+			"settings":
+			{
+				"buffer_size": 1219,
 				"line_ending": "Unix"
 			}
 		}
@@ -611,12 +670,60 @@
 	"build_system": "Packages/User/make.sublime-build",
 	"command_palette":
 	{
-		"height": 372.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
+				"Men",
+				"View: Toggle Menu"
+			],
+			[
+				"al",
+				"AlignTab"
+			],
+			[
+				"Linter",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"Lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"SublimeLinter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"Sub",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"Toggle lin",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"Package ",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Set:JS",
+				"Set Syntax: JSON"
+			],
+			[
 				"Pack",
 				"Package Control: Install Package"
+			],
+			[
+				"Rein",
+				"Indentation: Reindent Lines"
 			],
 			[
 				"Li",
@@ -628,10 +735,6 @@
 			],
 			[
 				"Re",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"Rein",
 				"Indentation: Reindent Lines"
 			],
 			[
@@ -649,10 +752,6 @@
 			[
 				"Al",
 				"AlignTab"
-			],
-			[
-				"Pac",
-				"Package Control: Install Package"
 			],
 			[
 				"set:c++",
@@ -725,10 +824,6 @@
 			[
 				"set:php",
 				"Set Syntax: PHP"
-			],
-			[
-				"Packa",
-				"Package Control: Install Package"
 			],
 			[
 				"html",
@@ -807,7 +902,7 @@
 				"Git: Status"
 			]
 		],
-		"width": 449.0
+		"width": 453.0
 	},
 	"console":
 	{
@@ -831,34 +926,56 @@
 		"/home/baudouin/Documents/ESEO/Happyland_svn",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/assets",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/characters",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/graphics",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/maps",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/music",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src",
-		"/home/baudouin/Documents/ESEO/Happyland_svn/src/c-containers",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/characters",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine"
 	],
 	"file_history":
 	[
+		"/home/baudouin/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/maps/example.map",
+		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=root/srv/http/vhost/gplay/index.php",
+		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=root/srv/http/vhost/api.mariage/index.php",
+		"/srv/http/example.php",
+		"/home/baudouin/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/baudouin/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/baudouin/devel/cloudfile-webdav@mozilla.kewis.ch/chrome/locales/en-US/settings.dtd",
+		"/home/baudouin/devel/cloudfile-webdav@mozilla.kewis.ch/chrome/content/management.js",
+		"/home/baudouin/devel/cloudfile-webdav@mozilla.kewis.ch/chrome/content/management.xhtml",
+		"/home/baudouin/devel/cloudfile-webdav@mozilla.kewis.ch/chrome/content/settings.js",
+		"/home/baudouin/devel/cloudfile-webdav@mozilla.kewis.ch/components/nsWebDAV.js",
+		"/home/baudouin/devel/cloudfile-webdav@mozilla.kewis.ch/chrome/content/settings.xhtml",
+		"/home/baudouin/devel/cloudfile-webdav@mozilla.kewis.ch/chrome/skin/webdav_32.png",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/map.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/tile.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/config.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/character.c",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/string-tools.c",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/string-tools.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/structures.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/structures.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/utils.c",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/src/utils.h",
+		"/home/baudouin/Documents/ESEO/Happyland_svn/configure.ac",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/asset.h",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/character.h",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/asset.c",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/characters/player.c",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/main.c",
-		"/home/baudouin/Documents/ESEO/Happyland_svn/src/config.h",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/characters/dog.character",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/graphics.c",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/game.h",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/game.c",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/tile.c",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/map.c",
-		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/character.c",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/characters/player.h",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/characters/character.list",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/graphics.c",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/character.h",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/graphics.h",
-		"/home/baudouin/Documents/ESEO/Happyland_svn/configure.ac",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/Makefile.am",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/engine/Makefile.am",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/asset.c",
@@ -870,10 +987,8 @@
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/map.c",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/graphics/arc1.png",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/characters/../character.h",
-		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/maps/example.map",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/tile.c",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/structures.h",
-		"/home/baudouin/Documents/ESEO/Happyland_svn/src/utils.h",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/graphics/assets.conf",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/assets/maps/map.list",
 		"/home/baudouin/Documents/ESEO/Happyland_svn/src/graphics/map.h",
@@ -947,27 +1062,7 @@
 		"/home/baudouin/gnome-extensions/MouseTravel/schemas/org.gnome.shell.extensions.mouse-travel.gschema.xml",
 		"/home/baudouin/.cache/.fr-TluEv0/metadata.json",
 		"/home/baudouin/Documents/ESEO/Happyland/assets/graphics/license.rtf",
-		"/home/baudouin/Documents/ESEO/svn/user6/exo12/lib.c",
-		"/etc/pacman.conf",
-		"/home/baudouin/devel/Pacman-Front/alpmpp/alpm-list.cpp",
-		"/home/baudouin/devel/Pacman-Front/alpm_list.c",
-		"/srv/http/tlm_api/vendor/amdg2/kiss/src/Kiss/Bdd/Record.php",
-		"/srv/http/tlm_api/vendor/amdg2/kiss/src/Kiss/Bdd/Table.php",
-		"/srv/http/tlm_api/index.php",
-		"/srv/http/tlm_api/vendor/amdg2/kiss/src/Kiss/Bdd/Field.php",
-		"/srv/http/Kiss/src/Kiss/Bdd/SQLComparator.php",
-		"/srv/http/tlm_api/vendor/amdg2/kiss/src/Kiss/Bdd/SQL.php",
-		"/srv/http/Kiss/src/Kiss/Bdd/SQL.php",
-		"/srv/http/Kiss/src/Kiss/Bdd/Record.php",
-		"/srv/http/Kiss/src/Kiss/Bdd/Table.php",
-		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=baudouin/srv/node/baudouin/colloque/repas/config.js",
-		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=baudouin/srv/node/baudouin/colloque/repas/lib.js",
-		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=baudouin/srv/node/baudouin/colloque/repas/main.js",
-		"/run/user/1000/gvfs/sftp:host=feildel.fr,user=baudouin/srv/node/baudouin/colloque/repas/app/index.html",
-		"/usr/share/gnome-shell/extensions/example@gnome-shell-extensions.gcampax.github.com/metadata.json",
-		"/usr/share/gnome-shell/extensions/example@gnome-shell-extensions.gcampax.github.com/convenience.js",
-		"/usr/share/gnome-shell/extensions/example@gnome-shell-extensions.gcampax.github.com/stylesheet.css",
-		"/usr/share/gnome-shell/extensions/example@gnome-shell-extensions.gcampax.github.com/extension.js"
+		"/home/baudouin/Documents/ESEO/svn/user6/exo12/lib.c"
 	],
 	"find":
 	{
@@ -978,6 +1073,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"",
 			"<open files>",
 			""
 		]
@@ -987,6 +1083,14 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"edge_",
+			");\n",
+			"B",
+			"3",
+			"Layer_FillPixels",
+			"SDL_CreateRGBSurface",
+			"Color",
+			"2",
 			"***",
 			" i",
 			"nbrAssets",
@@ -1106,22 +1210,16 @@
 			"strcpy_s",
 			"strcat_s",
 			"strcpy_s",
-			"sprintf_s",
-			"strcpy_s",
-			"sprintf_s",
-			"strcat_s",
-			"sprintf_s",
-			"strcpy_s",
-			"sprintf_s",
-			"strcat_s",
 			"sprintf_s"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
 		[
+			"2",
+			"3",
 			"walkCpt",
 			"PLAYER_H",
 			"DEBUG_MAP_FN",
@@ -1242,7 +1340,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1251,15 +1349,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3717,
+						"buffer_size": 2102,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3694,
-								3694
+								259,
+								259
 							]
 						],
 						"settings":
@@ -1268,10 +1366,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2352.0,
+						"translation.y": 1350.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -1280,15 +1378,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5077,
+						"buffer_size": 6812,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4885,
-								4885
+								6700,
+								6700
 							]
 						],
 						"settings":
@@ -1297,10 +1395,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2670.0,
+						"translation.y": 3855.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -1309,15 +1407,44 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1164,
+						"buffer_size": 7944,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1162,
-								1162
+								3832,
+								3832
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2925.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/config.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1117,
+								1117
 							]
 						],
 						"settings":
@@ -1328,82 +1455,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/engine/character.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10708,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10625,
-								10625
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3570.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "src/engine/map.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10392,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								638,
-								638
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "assets/maps/example.map",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 823,
+						"buffer_size": 1726,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								688,
-								688
+								936,
+								936
 							]
 						],
 						"settings":
@@ -1411,33 +1480,55 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 15,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 6,
-					"file": "src/engine/character.h",
+					"buffer": 5,
+					"file": "assets/graphics/assets.conf",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3329,
+						"buffer_size": 1431,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1635,
-								1635
+								1377,
+								1377
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1155.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/engine/asset.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2293,
+								2293
 							]
 						],
 						"settings":
@@ -1446,27 +1537,160 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 900.0,
+						"translation.y": 870.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/engine/tile.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2099,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1092,
+								1092
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "src/characters/player.h",
+					"buffer": 8,
+					"file": "src/engine/map.c",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1038,
+						"buffer_size": 14365,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1014,
-								1014
+								4577,
+								4577
+							],
+							[
+								4671,
+								4671
+							],
+							[
+								4765,
+								4765
+							],
+							[
+								4859,
+								4859
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5325.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/utils.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 10,
+					"file": "src/engine/map.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1600,
+								1600
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/utils.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
 							]
 						],
 						"settings":
@@ -1477,58 +1701,58 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "src/game.h",
+					"buffer": 12,
+					"file": "src/engine/character.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1491,
+						"buffer_size": 1944,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1469,
-								1469
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 615.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "src/engine/map.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1936,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								649,
-								649
+								1858,
+								1858
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C++/C++.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/characters/player.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 971,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								499,
+								499
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1538,20 +1762,78 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "src/config.h",
+					"buffer": 14,
+					"file": "src/structures.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1569,
+						"buffer_size": 890,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								385,
-								385
+								446,
+								446
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/engine/structures.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2228,
+								2228
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1245.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "src/engine/tile.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1204,
+								1204
 							]
 						],
 						"settings":
@@ -1562,7 +1844,36 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "src/game.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1186,
+								1186
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1596,7 +1907,7 @@
 		"cols":
 		[
 			0.0,
-			0.534104046243,
+			0.604134553628,
 			1.0
 		],
 		"rows":
@@ -1605,7 +1916,7 @@
 			1.0
 		]
 	},
-	"menu_visible": true,
+	"menu_visible": false,
 	"output.exec":
 	{
 		"height": 200.0
@@ -1708,7 +2019,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

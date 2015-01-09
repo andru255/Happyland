@@ -11,7 +11,6 @@
 #include "structures.h"
 #include "asset.h"
 
-
 /**
  * Create a new tile struct
  * @param  name Name of the tile
@@ -47,5 +46,19 @@ void Tile_copy(Tile ** dest, Tile ** src);
  * @return      [description]
  */
 int Tile_cmp(Tile * val1, Tile * val2);
+
+/**
+ * Get a shape value from a string
+ * @param  shapeStr string to convert
+ * @return          the value converted
+ */
+TileShape TileShape_FromStr(char * shapeStr);
+
+/**
+ * Convert a shape value to a string
+ * @param  shape The shape value
+ * @return       The string
+ */
+char * TileShape_ToStr(TileShape shape);
 
 #endif // __TILE_H__
